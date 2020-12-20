@@ -1,111 +1,59 @@
-<!DOCTYPE html>
-<html manifest="cache.manifest">
-<head>
-<title>MOHCINE ELECTRO</title>
-<meta charset="UTF-8" />
-<link rel="shortcut icon" href="../img/favicon.ico" />
-<link rel="stylesheet" href="../css/iconhome.css">
-<link rel="stylesheet" href="../css/materializehome.css">
-<link rel="stylesheet" href="../css/mainhome.css">
-
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />  
-<meta http-equiv="Content-Language" content="ar" />  
-
+﻿<html>
+<body onload="go()">
 <script>
-function DLProgress(e){Percent=(Math.round(e.loaded / e.total * 100));window.msgs.innerHTML="Instalando Cache Offline AGUARDE! / Installing Offline Cache WAIT!: " + Percent + "%";}
-function DisplayCacheProgress(){setTimeout(function(){window.msgs.innerHTML=" Cache Instalado com Sucesso! / Cache Installed Successfully!";},3000);setTimeout(function(){window.msgs.innerHTML="AGORA! Saia, Desligue a Internet e Abra o Navegador Novamente para executar os EXPLOITS! &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  NOW! Exit, Turn off the Internet and Open the Browser Again to run the EXPLOITS!";},5000);}window.applicationCache.addEventListener("progress",DLProgress,false);window.applicationCache.oncached=function(e){DisplayCacheProgress();};window.applicationCache.onupdateready=function(e){DisplayCacheProgress();};
+if(document.cookie.indexOf('kex=0') >= 0)
+    document.location.href = 'index.html';
 </script>
-</head>
-<body>
-<a href="https://www.mohcineelectro.com">
-<img class="icon" src="../img/M.png" style="position: absolute; right: 16; top: 280; width: 223px" width="223" height="200"/></a> 
-<script src="../p/cal.js"></script>
-<div style="background: url('../img/fundo.jpg') no-repeat 50% 100%;">
-<div id="app" >
-<nav class="transparent" >
-<div class="nav-wrapper">
-<span id="date" ></span><span id="clock" ></span>
-<h1 href="javascript:void(0)"  class="brand-logo">MOHCINE ELECTRO V2</h1>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
-<h1 class="msgs" id="msgs">
-<font face="Cocon® Next Arabic" style="font-size: 40pt">بلاي ستيشن 4 / على 
-التحديث 7.02&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-</font> </h1>
-</div>
-</nav>
-<br><br><br><br>
-<div class="menu">
-&nbsp;
-
-
-
-<html>
-	<head>
-		<title>PS4 7.00 - 7.02</title>
-		<script src="../utils.js"></script>
-		<script src="../int64.js"></script>
-		<script src="../rop.js"></script>
-		<script src="../userland.js"></script>
-		<script src="../ps4.js"></script>
-
-	</head>
-	<body onload="go()">
-		<button id="input1" onfocus="handle2()"></button>
-		<button id="input2"></button>
-		<button id="input3" onfocus="handle2()"></button>
-		<select id="select1">
-			<option value="value1">Value1</option>
-		</select>
-	</body>
-</html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<p>&nbsp;</p>
-<p>&nbsp;</p>
-<p>&nbsp;</div>
- </div>
-
-<br><br><br><br><br><br><br><br><br><br><br><br><br>
-
- <script src="../js/materialize.js"></script>
-  <script src="../js/vue.js"></script>
 <script>
-function load_auto(){
-  var link = document.createElement('a');
-	  document.body.appendChild(link);
-      link.href = 'hen702/index.html';
-	  link.target='';
-	  link.click();
-}
-function load_manual(){
-  var link = document.createElement('a');
-	  document.body.appendChild(link);
-      link.href = 'manual.html';
-	  link.target='';
-	  link.click();
+function print(){}
+
+var scriptCode = '';
+
+function preloadScripts(lst)
+{
+    for(var i = 0; i < lst.length; i++)
+    {
+        var xhr = new XMLHttpRequest();
+        xhr.open('GET', lst[i], false);
+        xhr.send('');
+        scriptCode += xhr.responseText + '\n';
+    }
 }
 
-function load_creditos(){
-  var link = document.createElement('a');
-	  document.body.appendChild(link);
-      link.href = 'http://ps3xploit.com/hen/installer/manual/index.html';
-	  link.target='';
-	  link.click();
+function done()
+{
+    if(main_ret == 0 || main_ret == 179)
+    {
+        alert("You're all set!\n CLOSE THE WEBPAGE AND THE WEBBROWSER AFTER PRESSING OK");
+        read_ptr_at(0);
+    }
+    else
+        alert("Jailbreak failed! Reboot your PS4 and try again.");
 }
+
+window.midExploit = function()
+{
+    preloadScripts(['702.js', 'jb.js', 'mira.js', 'ps4-hen-vtx-702.js', 'c-code.js'], go);
+}
+
+window.postExploit = function()
+{
+    document.cookie = 'kex=0';
+    setTimeout(function() //update the screen one last time...
+    {
+        eval.call(window, scriptCode);
+        done();
+    }, 100);
+};
 </script>
-
-
-</div>
+<script src="utils.js"></script>
+<script src="int64.js"></script>
+<script src="ps4.js"></script>
+<button id="input1" onfocus="handle2()"></button>
+<button id="input2"></button>
+<button id="input3" onfocus="handle2()"></button>
+<select id="select1">
+<option value="value1">Value1</option>
+</select>
 </body>
 </html>
