@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html manifest="cache.manifest">
+<head>
+<title>MOHCINE ELECTRO</title>
+<meta charset="UTF-8" />
+<link rel="shortcut icon" href="img/favicon.ico" />
+<link rel="stylesheet" href="css/iconhome.css">
+<link rel="stylesheet" href="css/materializehome.css">
+<link rel="stylesheet" href="css/mainhome.css">
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />  
+<meta http-equiv="Content-Language" content="ar" />  
+
+<script>
+function DLProgress(e){Percent=(Math.round(e.loaded / e.total * 100));window.msgs.innerHTML="Instalando Cache Offline AGUARDE! / Installing Offline Cache WAIT!: " + Percent + "%";}
+function DisplayCacheProgress(){setTimeout(function(){window.msgs.innerHTML=" Cache Instalado com Sucesso! / Cache Installed Successfully!";},3000);setTimeout(function(){window.msgs.innerHTML="AGORA! Saia, Desligue a Internet e Abra o Navegador Novamente para executar os EXPLOITS! &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  NOW! Exit, Turn off the Internet and Open the Browser Again to run the EXPLOITS!";},5000);}window.applicationCache.addEventListener("progress",DLProgress,false);window.applicationCache.oncached=function(e){DisplayCacheProgress();};window.applicationCache.onupdateready=function(e){DisplayCacheProgress();};
+</script>
+</head>
+<body>
+<a href="https://www.mohcineelectro.com">
+<img class="icon" src="img/M.png" style="position: absolute; right: 16; top: 280; width: 223px" width="223" height="200"/></a> 
+<script src="p/cal.js"></script>
+<div style="background: url('img/fundo.jpg')50%/100% no-repeat;">
+<div id="app" >
+<nav class="transparent" >
+<div class="nav-wrapper">
+<span id="date" ></span><span id="clock" ></span>
+<h1 href="javascript:void(0)"  class="brand-logo">MOHCINE ELECTRO V2</h1>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+<h1 class="msgs" id="msgs">
+<font face="Cocon® Next Arabic" style="font-size: 40pt">اختر نوع التفعيل / إختر 
+نوع الجهاز&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</font> </h1>
+</div>
+</nav>
+<br><br><br><br>
+<div class="menu">
+<button class="tile" onclick="load_auto(); return false"><img src="img/HenEnable.png"><p class="white-text-lancador">
+PS4 HEN 7.02</p>
+</button>&nbsp;
+<button class="tile" onclick="load_manual(); return false"><img src="img/HenEnable.png"><p class="white-text-lancador">
+PS4 MANUAL</p>
+</button>&nbsp;
+<button class="tile" onclick="load_HEN672(); return false"><img src="img/HenEnable.png"><p class="white-text-lancador">
+PS4 HEN 6.62</p>
+</button>&nbsp;
+<button class="tile" onclick="load_PS3HEN(); return false"><img src="img/Ps3.png"><p class="white-text-lancador">
+PS3 HEN 4.87</p>
+</button>&nbsp;
+<button class="tile" onclick="load_PS3CFW(); return false"><img src="img/Ps3.png"><p class="white-text-lancador">
+PS3 CFW 4.87</p>
+</button>
+
+
+</div>
+ </div>
+
+<br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+ <script src="js/materialize.js"></script>
+  <script src="js/vue.js"></script>
+<script>
+function load_auto(){
+  var link = document.createElement('a');
+	  document.body.appendChild(link);
+      link.href = 'automatico.html';
+	  link.target='';
+	  link.click();
+}
+function load_manual(){
+  var link = document.createElement('a');
+	  document.body.appendChild(link);
+      link.href = 'manual.html';
+	  link.target='';
+	  link.click();
+}
+
+function load_HEN672(){
+  var link = document.createElement('a');
+	  document.body.appendChild(link);
+      link.href = 'hen672/index.html';
+	  link.target='';
+	  link.click();
+}
+
+function load_PS3HEN(){
+  var link = document.createElement('a');
+	  document.body.appendChild(link);
+      link.href = 'http://ps3xploit.com/hen/installer/manual/index.html';
+	  link.target='';
+	  link.click();
+}
+
+
+
+
+function load_PS3CFW(){
+  var link = document.createElement('a');
+	  document.body.appendChild(link);
+      link.href = 'http://www.mohcineelectro.com/';
+	  link.target='';
+	  link.click();
+}
+</script>
+
+
+</div>
+</body>
+</html>
