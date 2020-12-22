@@ -1,0 +1,163 @@
+<html manifest="offlinexmb.cache">
+<head>
+<meta charset="utf-8">
+<title>7.02 MOHCINE ELECTRO</title>
+<link rel="stylesheet prefetch" href="Style.css">
+<script>
+function DLProgress(e){
+	parent.ScrOverlay.style.display="block";
+	Percent=(Math.round(e.loaded / e.total * 100));
+	parent.cacheUPDtxt.innerHTML=" جاري أخذ نسخة للعمل بدون انترنت " + Percent + "%";
+	parent.CacheBar.style.width=Percent + '%';
+}
+function DisplayCacheProgress(){
+	setTimeout(function(){parent.cacheUPDtxt.innerHTML="تم اخذ النسخة بنجاح ... برجاء اغلاق المتصفح وإعادة تشغيلة مرة أخرى";},1000);}
+	window.applicationCache.addEventListener("progress",DLProgress,false);
+	window.applicationCache.oncached=function(e){DisplayCacheProgress();};
+	window.applicationCache.onupdateready=function(e){DisplayCacheProgress();};
+	window.applicationCache.onerror=function(e){parent.cacheUPDtxt.innerHTML="حدث خطأ اثناء أخذ النسخة !!";
+};
+</script>
+</head>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Cairo&display=swap');
+</style>
+<body class="bg-color">
+<div style="background-image: url('DRC.jpg'); background-size:cover ; height:100%;">
+<div id=ScrOverlay class=cacheUPDbg><pre id=cacheUPDtxt class=cacheUPD></pre>
+<div id=CacheProgress><div id=CacheBar></div></div></div>
+<hr><br></span><h1 style='font-size:30px;text-align:center;color:white;'>7.02  تهكير التحديث     </h1><br>
+<hr>
+<a href="https://www.paypal.com/paypalme/mohcineelhamri" id="donate" onMouseOver="wsf.innerHTML='شكرا لك على دعمك لنا'"; onmouseout="wsf.innerHTML='عايز تعمل ايه ؟'"  style='font-size:25px;text-shadow: 4px 4px 4px black;text-align:center;color:#7CFD96;'>الدعم المادي</a><a href="https://www.youtube.com/mohcineelectro" target="_blank" id="donate2" style='font-size:25px;text-shadow: 4px 4px 4px black;text-align:center;color:#7CFD96;'>تابعنا عاليوتيوب</a><h1 id=wsf style='font-size:25px;text-align:center;color:#ffff01;'>ماذا تريد ان تفعل ؟</h1>
+<hr>
+<div style="text-align:center"  id="MyItems">
+<br><br>
+<button href="index.html#" style='font-size:25px;font-family:Cairo,sans-serif;width:180px;height:60px;text-align:center;color:#4863A0' class="pointer" onMouseOver="wsf.innerHTML='Debug Settings وتفعيل ال HEN تشغيل ال'"; onmouseout="wsf.innerHTML='عايز تعمل ايه ؟'" onclick="load_hen(); return false"><b>تفعيل التهكير</button>
+<br>
+<h1 style='font-size:48px;text-align:center;text-shadow: 4px 4px 4px black;color:#7CFD96'>الاضافات</h1>
+<br>
+<button href="index.html#" style='font-size:20px;text-align:center;color:#4863A0' class="pointer" onMouseOver="wsf.innerHTML='لتحميل اي اضافة تريدها على جهازك باستخدام بورت رقم 9020'"; onmouseout="wsf.innerHTML='عايز تعمل ايه ؟'" onclick="load_binloader(); return false"> Bin Loader </button>
+<button href="index.html#" style='font-size:20px;text-align:center;color:#4863A0' class="pointer" onMouseOver="wsf.innerHTML='للدخول على جهازك باستخدام بروتوكول اتصال اف تي بي'"; onmouseout="wsf.innerHTML='عايز تعمل ايه ؟'" onclick="load_ftp(); return false"> FTP </button>
+<button href="index.html#" style='font-size:20px;text-align:center;color:#4863A0' class="pointer" onMouseOver="wsf.innerHTML='fpkg البدء في اخذ نسخة من اللعبة على هارديسك خارجي لعمل ملفات'"; onmouseout="wsf.innerHTML='عايز تعمل ايه ؟'" onclick="load_dumper(); return false"> Dumper Game </button>
+<button href="index.html#" style='font-size:20px;text-align:center;color:#4863A0' class="pointer" onMouseOver="wsf.innerHTML='تغيير الساعة الداخلية للجهاز (مفيد اذا كان لديك العاب بي اس بلس قديمه)'"; onmouseout="wsf.innerHTML='عايز تعمل ايه ؟'" onclick="load_kernelclock(); return false"> Kernel Clock </button>
+<button href="index.html#" style='font-size:20px;text-align:center;color:#4863A0' class="pointer" onMouseOver="wsf.innerHTML='نقل جميع العابك وبرامجك الى هارديسك خارجي'"; onmouseout="wsf.innerHTML='عايز تعمل ايه ؟'" onclick="load_app2usb(); return false"> App2USB </button>
+<button href="index.html#" style='font-size:20px;text-align:center;color:#4863A0' class="pointer" onMouseOver="wsf.innerHTML='(مفيد في حل بعض اخطاء بلايستيشن) Debug settings يضيف مجموعة مميزات اخرى  ل'"; onmouseout="wsf.innerHTML='عايز تعمل ايه ؟'" onclick="load_todex(); return false"> ToDex </button>
+<br><br>
+<button href="index.html#" style='font-size:20px;text-align:center;color:#4863A0' class="pointer" onMouseOver="wsf.innerHTML='لعمل نسخة احتياطية من الملفات المهمة في قاعدة البيانات وبعض ملفات المستخدم'"; onmouseout="wsf.innerHTML='عايز تعمل ايه ؟'" onclick="load_backup(); return false"> DB Backup </button>
+<button href="index.html#" style='font-size:20px;text-align:center;color:#4863A0' class="pointer" onMouseOver="wsf.innerHTML='لاستعداة النسخة الاحتياطية من قاعدة البيانات وملفات المستخدم'"; onmouseout="wsf.innerHTML='عايز تعمل ايه ؟'" onclick="load_restore(); return false"> DB Restore </button>
+<button href="index.html#" style='font-size:20px;text-align:center;color:#4863A0' class="pointer" onMouseOver="wsf.innerHTML='ايقاف التحديث التلقائي لنظام التشغيل'"; onmouseout="wsf.innerHTML='عايز تعمل ايه ؟'" onclick="load_updatesDisable(); return false">Disable Update</button>
+<button href="index.html#" style='font-size:20px;text-align:center;color:#4863A0' class="pointer" onMouseOver="wsf.innerHTML='تفعيل التحديث التلقائي لنظام التشغيل'"; onmouseout="wsf.innerHTML='عايز تعمل ايه ؟'" onclick="load_updatesEnable(); return false"> Enable Update </button>
+<button href="index.html#" style='font-size:20px;text-align:center;color:#4863A0' class="pointer" onMouseOver="wsf.innerHTML='منع متصفح الانترنت من بدء التشغيل عند اخر صفحة قمت بزيارتها '"; onmouseout="wsf.innerHTML='عايز تعمل ايه ؟'" onclick="load_historyBlocker(); return false"> History Blocker </button>
+<button href="index.html#" style='font-size:20px;text-align:center;color:#4863A0' class="pointer" onMouseOver="wsf.innerHTML='السماح لمتصفح الانترنت بتذكر اخر صفحة قمت بزيارتها وتشغيلها في المرة المقبلة'"; onmouseout="wsf.innerHTML='عايز تعمل ايه ؟'" onclick="load_enablebrowser(); return false"> Enable Browser </button>
+<br><br><br><br><br><br><br>
+</div>
+<script>
+function load_hen(){
+
+  var link = document.createElement('a');
+        document.body.appendChild(link);
+        link.href = 'HEN.html';
+        link.target = '_blank';
+        link.click();
+}
+function load_app2usb(){
+
+  var link = document.createElement('a');
+        document.body.appendChild(link);
+        link.href = 'App2USB.html';
+        link.target = '_blank';
+        link.click();
+}
+function load_backup(){
+
+  var link = document.createElement('a');
+        document.body.appendChild(link);
+        link.href = 'Backup.html';
+        link.target = '_blank';
+        link.click();
+}
+function load_updatesDisable(){
+
+  var link = document.createElement('a');
+        document.body.appendChild(link);
+        link.href = 'Disable-Updates.html';
+        link.target = '_blank';
+        link.click();
+}
+function load_dumper(){
+
+  var link = document.createElement('a');
+        document.body.appendChild(link);
+        link.href = 'Dumper.html';
+        link.target = '_blank';
+        link.click();
+}
+function load_enablebrowser(){
+
+  var link = document.createElement('a');
+        document.body.appendChild(link);
+        link.href = 'Enable-Browser.html';
+        link.target = '_blank';
+        link.click();
+}
+function load_updatesEnable(){
+
+  var link = document.createElement('a');
+        document.body.appendChild(link);
+        link.href = 'Enable-Updates.html';
+        link.target = '_blank';
+        link.click();
+}
+function load_ftp(){
+
+  var link = document.createElement('a');
+        document.body.appendChild(link);
+        link.href = 'FTP.html';
+        link.target = '_blank';
+        link.click();
+}
+function load_historyBlocker(){
+
+  var link = document.createElement('a');
+        document.body.appendChild(link);
+        link.href = 'History-Blocker.html';
+        link.target = '_blank';
+        link.click();
+}
+function load_kernelclock(){
+
+  var link = document.createElement('a');
+        document.body.appendChild(link);
+        link.href = 'Kernel-Clock.html';
+        link.target = '_blank';
+        link.click();
+}
+function load_restore(){
+
+  var link = document.createElement('a');
+        document.body.appendChild(link);
+        link.href = 'Restore.html';
+        link.target = '_blank';
+        link.click();
+}
+function load_todex(){
+
+  var link = document.createElement('a');
+        document.body.appendChild(link);
+        link.href = 'todex.html';
+        link.target = '_blank';
+        link.click();
+}
+function load_binloader(){
+
+  var link = document.createElement('a');
+        document.body.appendChild(link);
+        link.href = 'BinLoader/index.html';
+        link.target = '_blank';
+        link.click();
+}
+
+</script>
+</div>
+</body>
+</html>
