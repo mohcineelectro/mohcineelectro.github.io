@@ -7,7 +7,7 @@
 function DLProgress(e){
 	parent.ScrOverlay.style.display="block";
 	Percent=(Math.round(e.loaded / e.total * 100));
-	parent.cacheUPDtxt.innerHTML="جاري أخذ نسخة للعمل بدون انترنت " + Percent + "%";
+	parent.cacheUPDtxt.innerHTML=" جاري أخذ نسخة للعمل بدون انترنت " + Percent + "%";
 	parent.CacheBar.style.width=Percent + '%';
 }
 function DisplayCacheProgress(){
@@ -18,55 +18,38 @@ function DisplayCacheProgress(){
 	window.applicationCache.onerror=function(e){parent.cacheUPDtxt.innerHTML="حدث خطأ اثناء أخذ النسخة !!";
 };
 </script>
-<script>
-    function showdate() {
-  var dt = new Date();
-    Hour= dt.getHours();
-  Minute= dt.getMinutes();
-     Day=dt.getDate();
-   Month=dt.getMonth()+1;
-   Year=dt.getFullYear();
-if (Minute < 10) { Minute = "0" + Minute; };
-if (Hour < 10) { Hour = "0" + Hour; };
-document.getElementById("date").innerHTML = (Day+"/"+Month+"/"+Year);
-document.getElementById("clock").innerHTML = (Hour+":"+Minute);
-  }
-  
-  setInterval(showdate,0);
-</script>
 </head>
-<body class="bg-darker">
-<div style="background-image: url('1.jpg'); height:100%;">
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Cairo&display=swap');
+</style>
+<body class="bg-color">
+<div style="background-image: url('DRC.jpg'); background-size:cover ; height:100%;">
 <div id=ScrOverlay class=cacheUPDbg><pre id=cacheUPDtxt class=cacheUPD></pre>
 <div id=CacheProgress><div id=CacheBar></div></div></div>
-<hr><span id="date" ></span><span id="clock" ></span><h1 style='font-size:25px;text-align:center;color:white;'>7.02  تهكير التحديث   FW&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</h1>
+<hr><br></span><h1 style='font-size:30px;text-align:center;color:white;'>7.02  تهكير التحديث     </h1><br>
 <hr>
-<a href="https://www.youtube.com/mohcineelectro" id="donate" style='font-size:25px;text-shadow: 4px 4px 4px black;text-align:center;color:#7CFD96;'>تابعونا على اليوتيب </a><a href="https://www.paypal.com/paypalme/mohcineelhamri" id="donate2" style='font-size:25px;text-shadow: 4px 4px 4px black;text-align:center;color:#7CFD96;'>الدعم المادي</a><h1 id=msgs2 style='font-size:25px;text-align:center;color:white;'>ماذا تريد ان تفعل ؟</h1>
+<a href="https://www.paypal.com/paypalme/mohcineelhamri" id="donate" onMouseOver="wsf.innerHTML='شكرا لك على دعمك لنا'"; onmouseout="wsf.innerHTML='عايز تعمل ايه ؟'"  style='font-size:25px;text-shadow: 4px 4px 4px black;text-align:center;color:#7CFD96;'>الدعم المادي</a><a href="https://www.youtube.com/mohcineelectro" target="_blank" id="donate2" style='font-size:25px;text-shadow: 4px 4px 4px black;text-align:center;color:#7CFD96;'>تابعنا عاليوتيوب</a><h1 id=wsf style='font-size:25px;text-align:center;color:#ffff01;'>ماذا تريد ان تفعل ؟</h1>
 <hr>
 <div style="text-align:center"  id="MyItems">
 <br><br>
-<button href="index-2.html#" style='font-size:22px;text-align:center;color:#4863A0' class="pointer" onMouseOver="msgs2.innerHTML='HEN for PS4 7.02 Fw'"; onmouseout="msgs2.innerHTML='ماذا تريد ان تفعل ؟'" onclick="load_hen(); return false"><b>&nbsp;&nbsp;Hen&nbsp;&nbsp; </button>
-<button href="index-2.html#" style='font-size:22px;text-align:center;color:#4863A0' class="pointer" onMouseOver="msgs2.innerHTML='Mira for PS4 7.02 Fw'"; onmouseout="msgs2.innerHTML='ماذا تريد ان تفعل ؟'" onclick="load_mira(); return false"><b>&nbsp;&nbsp;Mira&nbsp;&nbsp; </button>
-<br><br>
-<h1 style='font-size:30px;text-align:center;text-shadow: 4px 4px 4px black;color:#4863A0'>الاضافات</h1>
+<button href="index.html#" style='font-size:25px;font-family:Cairo,sans-serif;width:180px;height:60px;text-align:center;color:#4863A0' class="pointer" onMouseOver="wsf.innerHTML='Debug Settings وتفعيل ال HEN تشغيل ال'"; onmouseout="wsf.innerHTML='عايز تعمل ايه ؟'" onclick="load_hen(); return false"><b>تفعيل التهكير</button>
 <br>
-<button href="index-2.html#" style='font-size:20px;text-align:center;color:#4863A0' class="pointer" onMouseOver="msgs2.innerHTML='Loads a bin file sent to the PS4 IP address on port 9020'"; onmouseout="msgs2.innerHTML='ماذا تريد ان تفعل ؟'" onclick="load_binloader(); return false"> Bin Loader </button>
-<button href="index-2.html#" style='font-size:20px;text-align:center;color:#4863A0' class="pointer" onMouseOver="msgs2.innerHTML='A full access FTP server for the PS4'"; onmouseout="msgs2.innerHTML='ماذا تريد ان تفعل ؟'" onclick="load_ftp(); return false"> FTP </button>
-<button href="index-2.html#" style='font-size:20px;text-align:center;color:#4863A0' class="pointer" onMouseOver="msgs2.innerHTML='Dump Games to a USB drive to be able to create fpkg files'"; onmouseout="msgs2.innerHTML='ماذا تريد ان تفعل ؟'" onclick="load_dumper(); return false"> Dumper Game </button>
-<button href="index-2.html#" style='font-size:20px;text-align:center;color:#4863A0' class="pointer" onMouseOver="msgs2.innerHTML='Change clock kernel'"; onmouseout="msgs2.innerHTML='ماذا تريد ان تفعل ؟'" onclick="load_kernelclock(); return false"> Kernel Clock </button>
-<button href="index-2.html#" style='font-size:20px;text-align:center;color:#4863A0' class="pointer" onMouseOver="msgs2.innerHTML='Move installed games to an external USB drive'"; onmouseout="msgs2.innerHTML='ماذا تريد ان تفعل ؟'" onclick="load_app2usb(); return false"> App2USB </button>
-<button href="index-2.html#" style='font-size:20px;text-align:center;color:#4863A0' class="pointer" onMouseOver="msgs2.innerHTML='unlocks some debug features available on testkit'"; onmouseout="msgs2.innerHTML='ماذا تريد ان تفعل ؟'" onclick="load_todex(); return false"> ToDex </button>
+<h1 style='font-size:48px;text-align:center;text-shadow: 4px 4px 4px black;color:#7CFD96'>الاضافات</h1>
+<br>
+<button href="index.html#" style='font-size:20px;text-align:center;color:#4863A0' class="pointer" onMouseOver="wsf.innerHTML='لتحميل اي اضافة تريدها على جهازك باستخدام بورت رقم 9020'"; onmouseout="wsf.innerHTML='عايز تعمل ايه ؟'" onclick="load_binloader(); return false"> Bin Loader </button>
+<button href="index.html#" style='font-size:20px;text-align:center;color:#4863A0' class="pointer" onMouseOver="wsf.innerHTML='للدخول على جهازك باستخدام بروتوكول اتصال اف تي بي'"; onmouseout="wsf.innerHTML='عايز تعمل ايه ؟'" onclick="load_ftp(); return false"> FTP </button>
+<button href="index.html#" style='font-size:20px;text-align:center;color:#4863A0' class="pointer" onMouseOver="wsf.innerHTML='fpkg البدء في اخذ نسخة من اللعبة على هارديسك خارجي لعمل ملفات'"; onmouseout="wsf.innerHTML='عايز تعمل ايه ؟'" onclick="load_dumper(); return false"> Dumper Game </button>
+<button href="index.html#" style='font-size:20px;text-align:center;color:#4863A0' class="pointer" onMouseOver="wsf.innerHTML='تغيير الساعة الداخلية للجهاز (مفيد اذا كان لديك العاب بي اس بلس قديمه)'"; onmouseout="wsf.innerHTML='عايز تعمل ايه ؟'" onclick="load_kernelclock(); return false"> Kernel Clock </button>
+<button href="index.html#" style='font-size:20px;text-align:center;color:#4863A0' class="pointer" onMouseOver="wsf.innerHTML='نقل جميع العابك وبرامجك الى هارديسك خارجي'"; onmouseout="wsf.innerHTML='عايز تعمل ايه ؟'" onclick="load_app2usb(); return false"> App2USB </button>
+<button href="index.html#" style='font-size:20px;text-align:center;color:#4863A0' class="pointer" onMouseOver="wsf.innerHTML='(مفيد في حل بعض اخطاء بلايستيشن) Debug settings يضيف مجموعة مميزات اخرى  ل'"; onmouseout="wsf.innerHTML='عايز تعمل ايه ؟'" onclick="load_todex(); return false"> ToDex </button>
 <br><br>
-<button href="index-2.html#" style='font-size:20px;text-align:center;color:#4863A0' class="pointer" onMouseOver="msgs2.innerHTML='Create a backup of important database files ans User Data'"; onmouseout="msgs2.innerHTML='ماذا تريد ان تفعل ؟'" onclick="load_backup(); return false"> DB Backup </button>
-<button href="index-2.html#" style='font-size:20px;text-align:center;color:#4863A0' class="pointer" onMouseOver="msgs2.innerHTML='Restore a backup of the database files and User Data'"; onmouseout="msgs2.innerHTML='ماذا تريد ان تفعل ؟'" onclick="load_restore(); return false"> DB Restore </button>
-<button href="index-2.html#" style='font-size:20px;text-align:center;color:#4863A0' class="pointer" onMouseOver="msgs2.innerHTML='Disable the auto opening of the last page used in the PS4 WebBrowser'"; onmouseout="msgs2.innerHTML='ماذا تريد ان تفعل ؟'" onclick="load_historyBlocker(); return false"> History Blocker </button>
-<button href="index-2.html#" style='font-size:20px;text-align:center;color:#4863A0' class="pointer" onMouseOver="msgs2.innerHTML='Creates dummy files in the PS4 update folder'"; onmouseout="msgs2.innerHTML='ماذا تريد ان تفعل ؟'" onclick="load_updatesDisable(); return false">Disable Update</button>
-<button href="index-2.html#" style='font-size:20px;text-align:center;color:#4863A0' class="pointer" onMouseOver="msgs2.innerHTML='Removes the dummy files in the PS4 update folder'"; onmouseout="msgs2.innerHTML='ماذا تريد ان تفعل ؟'" onclick="load_updatesEnable(); return false"> Enable Update </button>
-<button href="index-2.html#" style='font-size:20px;text-align:center;color:#4863A0' class="pointer" onMouseOver="msgs2.innerHTML='Enable Browser'"; onmouseout="msgs2.innerHTML='ماذا تريد ان تفعل ؟'" onclick="load_enablebrowser(); return false"> Enable Browser </button>
-<br><br>
-<button href="index-2.html#" style='font-size:20px;text-align:center;color:#4863A0' class="pointer" onMouseOver="msgs2.innerHTML='Reactive PS+'"; onmouseout="msgs2.innerHTML='ماذا تريد ان تفعل ؟'" onclick="load_reactps(); return false"> ReactivePS+ </button>
-<br><br><br><br><br>
-
+<button href="index.html#" style='font-size:20px;text-align:center;color:#4863A0' class="pointer" onMouseOver="wsf.innerHTML='لعمل نسخة احتياطية من الملفات المهمة في قاعدة البيانات وبعض ملفات المستخدم'"; onmouseout="wsf.innerHTML='عايز تعمل ايه ؟'" onclick="load_backup(); return false"> DB Backup </button>
+<button href="index.html#" style='font-size:20px;text-align:center;color:#4863A0' class="pointer" onMouseOver="wsf.innerHTML='لاستعداة النسخة الاحتياطية من قاعدة البيانات وملفات المستخدم'"; onmouseout="wsf.innerHTML='عايز تعمل ايه ؟'" onclick="load_restore(); return false"> DB Restore </button>
+<button href="index.html#" style='font-size:20px;text-align:center;color:#4863A0' class="pointer" onMouseOver="wsf.innerHTML='ايقاف التحديث التلقائي لنظام التشغيل'"; onmouseout="wsf.innerHTML='عايز تعمل ايه ؟'" onclick="load_updatesDisable(); return false">Disable Update</button>
+<button href="index.html#" style='font-size:20px;text-align:center;color:#4863A0' class="pointer" onMouseOver="wsf.innerHTML='تفعيل التحديث التلقائي لنظام التشغيل'"; onmouseout="wsf.innerHTML='عايز تعمل ايه ؟'" onclick="load_updatesEnable(); return false"> Enable Update </button>
+<button href="index.html#" style='font-size:20px;text-align:center;color:#4863A0' class="pointer" onMouseOver="wsf.innerHTML='منع متصفح الانترنت من بدء التشغيل عند اخر صفحة قمت بزيارتها '"; onmouseout="wsf.innerHTML='عايز تعمل ايه ؟'" onclick="load_historyBlocker(); return false"> History Blocker </button>
+<button href="index.html#" style='font-size:20px;text-align:center;color:#4863A0' class="pointer" onMouseOver="wsf.innerHTML='السماح لمتصفح الانترنت بتذكر اخر صفحة قمت بزيارتها وتشغيلها في المرة المقبلة'"; onmouseout="wsf.innerHTML='عايز تعمل ايه ؟'" onclick="load_enablebrowser(); return false"> Enable Browser </button>
+<br><br><br><br><br><br><br>
 </div>
 <script>
 function load_hen(){
@@ -74,14 +57,6 @@ function load_hen(){
   var link = document.createElement('a');
         document.body.appendChild(link);
         link.href = 'HEN.html';
-        link.target = '_blank';
-        link.click();
-}
-function load_mira(){
-
-  var link = document.createElement('a');
-        document.body.appendChild(link);
-        link.href = 'mira.html';
         link.target = '_blank';
         link.click();
 }
@@ -129,10 +104,9 @@ function load_updatesEnable(){
 
   var link = document.createElement('a');
         document.body.appendChild(link);
-        link.href = 'todex.html';
+        link.href = 'Enable-Updates.html';
         link.target = '_blank';
         link.click();
-window.location.href="Enable-Updates.html";
 }
 function load_ftp(){
 
@@ -182,17 +156,8 @@ function load_binloader(){
         link.target = '_blank';
         link.click();
 }
-function load_reactps(){
 
-  var link = document.createElement('a');
-        document.body.appendChild(link);
-        link.href = 'reactps.html';
-        link.target = '_blank';
-        link.click();
-}
 </script>
 </div>
 </body>
-
-
 </html>
