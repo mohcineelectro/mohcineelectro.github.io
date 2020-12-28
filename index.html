@@ -8,15 +8,15 @@
 function DLProgress(e){
 	parent.ScrOverlay.style.display="block";
 	Percent=(Math.round(e.loaded / e.total * 100));
-	parent.cacheUPDtxt.innerHTML=" ÌÇÑí ÃÎĞ äÓÎÉ ááÚãá ÈÏæä ÇäÊÑäÊ " + Percent + "%";
+	parent.cacheUPDtxt.innerHTML=" ÃŒÃ‡Ã‘Ã­ ÃƒÃÃ Ã¤Ã“ÃÃ‰ Ã¡Ã¡ÃšÃ£Ã¡ ÃˆÃÃ¦Ã¤ Ã‡Ã¤ÃŠÃ‘Ã¤ÃŠ " + Percent + "%";
 	parent.CacheBar.style.width=Percent + '%';
 }
 function DisplayCacheProgress(){
-	setTimeout(function(){parent.cacheUPDtxt.innerHTML="Êã ÇÎĞ ÇáäÓÎÉ ÈäÌÇÍ ... ÈÑÌÇÁ ÇÛáÇŞ ÇáãÊÕİÍ æÅÚÇÏÉ ÊÔÛíáÉ ãÑÉ ÃÎÑì";},1000);}
+	setTimeout(function(){parent.cacheUPDtxt.innerHTML="ÃŠÃ£ Ã‡ÃÃ Ã‡Ã¡Ã¤Ã“ÃÃ‰ ÃˆÃ¤ÃŒÃ‡Ã ... ÃˆÃ‘ÃŒÃ‡Ã Ã‡Ã›Ã¡Ã‡Ã Ã‡Ã¡Ã£ÃŠÃ•ÃÃ Ã¦Ã…ÃšÃ‡ÃÃ‰ ÃŠÃ”Ã›Ã­Ã¡Ã‰ Ã£Ã‘Ã‰ ÃƒÃÃ‘Ã¬";},1000);}
 	window.applicationCache.addEventListener("progress",DLProgress,false);
 	window.applicationCache.oncached=function(e){DisplayCacheProgress();};
 	window.applicationCache.onupdateready=function(e){DisplayCacheProgress();};
-	window.applicationCache.onerror=function(e){parent.cacheUPDtxt.innerHTML="ÍÏË ÎØÃ ÇËäÇÁ ÃÎĞ ÇáäÓÎÉ !!";
+	window.applicationCache.onerror=function(e){parent.cacheUPDtxt.innerHTML="ÃÃÃ‹ ÃÃ˜Ãƒ Ã‡Ã‹Ã¤Ã‡Ã ÃƒÃÃ Ã‡Ã¡Ã¤Ã“ÃÃ‰ !!";
 };
 </script>
 
@@ -37,9 +37,7 @@ function DisplayCacheProgress(){
 
 </head>
 
-<style>
-@import url('https://fonts.googleapis.com/css2?family=Cairo&display=swap');
-</style>
+
 
 <body class="bg-color">
 
@@ -68,8 +66,8 @@ function DisplayCacheProgress(){
 
 
 
-<font face="CoconÂ® Next Arabic" style="font-size: 30pt">Ø§Ø®ØªØ± Ù†ÙˆØ¹ Ø§Ù„ØªÙØ¹ÙŠÙ„ / Ø¥Ø®ØªØ± 
-Ù†ÙˆØ¹ Ø§Ù„Ø¬Ù‡Ø§Ø²</font><font face="CoconÂ® Next Arabic" style="font-size: 40pt">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<font face="CoconÃ‚Â® Next Arabic" style="font-size: 30pt">Ã˜Â§Ã˜Â®Ã˜ÂªÃ˜Â± Ã™â€ Ã™Ë†Ã˜Â¹ Ã˜Â§Ã™â€Ã˜ÂªÃ™ÂÃ˜Â¹Ã™Å Ã™â€ / Ã˜Â¥Ã˜Â®Ã˜ÂªÃ˜Â± 
+Ã™â€ Ã™Ë†Ã˜Â¹ Ã˜Â§Ã™â€Ã˜Â¬Ã™â€¡Ã˜Â§Ã˜Â²</font><font face="CoconÃ‚Â® Next Arabic" style="font-size: 40pt">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 </font> </h1>
 </div>
 </nav>
