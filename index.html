@@ -4,21 +4,7 @@
 <meta charset="utf-8">
 <title> MOHCINE ELECTRO</title>
 <link rel="stylesheet prefetch" href="Style.css">
-<script>
-function DLProgress(e){
-	parent.ScrOverlay.style.display="block";
-	Percent=(Math.round(e.loaded / e.total * 100));
-	parent.cacheUPDtxt.innerHTML=" ÌÇÑí ÃÎÐ äÓÎÉ ááÚãá ÈÏæä ÇäÊÑäÊ " + Percent + "%";
-	parent.CacheBar.style.width=Percent + '%';
-}
-function DisplayCacheProgress(){
-	setTimeout(function(){parent.cacheUPDtxt.innerHTML="Êã ÇÎÐ ÇáäÓÎÉ ÈäÌÇÍ ... ÈÑÌÇÁ ÇÛáÇÞ ÇáãÊÕÝÍ æÅÚÇÏÉ ÊÔÛíáÉ ãÑÉ ÃÎÑì";},1000);}
-	window.applicationCache.addEventListener("progress",DLProgress,false);
-	window.applicationCache.oncached=function(e){DisplayCacheProgress();};
-	window.applicationCache.onupdateready=function(e){DisplayCacheProgress();};
-	window.applicationCache.onerror=function(e){parent.cacheUPDtxt.innerHTML="ÍÏË ÎØÃ ÇËäÇÁ ÃÎÐ ÇáäÓÎÉ !!";
-};
-</script>
+
 
 
 
@@ -37,12 +23,13 @@ function DisplayCacheProgress(){
 
 </head>
 
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Cairo&display=swap');
+</style>
 
 
-<body class="bg-color">
 
-<div id=ScrOverlay class=cacheUPDbg><pre id=cacheUPDtxt class=cacheUPD></pre>
-<div id=CacheProgress><div id=CacheBar></div></div></div>
+
 
 
 
@@ -66,8 +53,8 @@ function DisplayCacheProgress(){
 
 
 
-<font face="CoconÂ® Next Arabic" style="font-size: 30pt">Ø§Ø®ØªØ± Ù†ÙˆØ¹ Ø§Ù„ØªÙØ¹ÙŠÙ„ / Ø¥Ø®ØªØ± 
-Ù†ÙˆØ¹ Ø§Ù„Ø¬Ù‡Ø§Ø²</font><font face="CoconÂ® Next Arabic" style="font-size: 40pt">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<font face="Cocon® Next Arabic" style="font-size: 30pt">اختر نوع التفعيل / إختر 
+نوع الجهاز</font><font face="Cocon® Next Arabic" style="font-size: 40pt">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 </font> </h1>
 </div>
 </nav>
@@ -99,7 +86,7 @@ PS3 CFW 4.87</p>
 function load_auto(){
   var link = document.createElement('a');
 	  document.body.appendChild(link);
-      link.href = 'hen672/index.html';
+      link.href = 'https://mohcineelectro.github.io/hen702/index.html';
 	  link.target='';
 	  link.click();
 }
@@ -122,7 +109,7 @@ function load_HEN672(){
 function load_PS3HEN(){
   var link = document.createElement('a');
 	  document.body.appendChild(link);
-      link.href = '';
+      link.href = 'http://ps3xploit.com/hen/installer/manual/index.html';
 	  link.target='';
 	  link.click();
 }
@@ -133,7 +120,7 @@ function load_PS3HEN(){
 function load_PS3CFW(){
   var link = document.createElement('a');
 	  document.body.appendChild(link);
-      link.href = '';
+      link.href = 'http://www.mohcineelectro.com/';
 	  link.target='';
 	  link.click();
 }
