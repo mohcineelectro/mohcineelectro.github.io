@@ -1,0 +1,190 @@
+	<html manifest="offlinexmb.cache">
+<head>
+<meta charset="utf-8">
+<title>7.02 MOHCINE ELECTRO</title>
+<link rel="stylesheet prefetch" href="Style.css">
+<script>
+function DLProgress(e){
+	parent.ScrOverlay.style.display="block";
+	Percent=(Math.round(e.loaded / e.total * 100));
+	parent.cacheUPDtxt.innerHTML="%" + Percent + " جاري أخذ نسخة للعمل بدون انترنت " ;
+	parent.CacheBar.style.width=Percent + '%';
+}
+function DisplayCacheProgress(){
+	setTimeout(function(){parent.cacheUPDtxt.innerHTML="تم اخذ النسخة بنجاح ... برجاء اغلاق المتصفح وإعادة تشغيلة مرة أخرى";},1000);}
+	window.applicationCache.addEventListener("progress",DLProgress,false);
+	window.applicationCache.oncached=function(e){DisplayCacheProgress();};
+	window.applicationCache.onupdateready=function(e){DisplayCacheProgress();};
+	window.applicationCache.onerror=function(e){parent.cacheUPDtxt.innerHTML="حدث خطأ اثناء أخذ النسخة !!";
+};
+</script>
+</head>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Cairo&display=swap');
+</style>
+<body class="bg-color">
+<div style="background-image: url('DRC.jpg'); background-size:cover ; height:100%;">
+<div id=ScrOverlay class=cacheUPDbg><pre id=cacheUPDtxt class=cacheUPD></pre>
+<div id=CacheProgress><div id=CacheBar></div></div></div>
+<hr><br></span><h1 style='font-size:30px;text-align:center;color:white;'>7.02  تهكير التحديث     </h1><br>
+<hr>
+<a href="https://www.paypal.com/paypalme/mohcineelhamri" id="donate" onMouseOver="wsf.innerHTML='شكرا لك على دعمك لنا'"; onmouseout="wsf.innerHTML='عايز تعمل ايه ؟'"  style='font-size:25px;text-shadow: 4px 4px 4px black;text-align:center;color:#7CFD96;'>الدعم المادي</a><a href="https://www.youtube.com/mohcineelectro" target="_blank" id="donate2" style='font-size:25px;text-shadow: 4px 4px 4px black;text-align:center;color:#7CFD96;'>تابعنا عاليوتيوب</a><h1 id=wsf style='font-size:25px;text-align:center;color:#ffff01;'>ماذا تريد ان تفعل ؟</h1>
+<hr>
+<div style="text-align:center"  id="MyItems">
+<br><br>
+<button href="index.html#" style='font-size:25px;font-family:Cairo,sans-serif;width:180px;height:60px;text-align:center;color:#4863A0' class="pointer" onMouseOver="wsf.innerHTML='VR يجب استخدامه لتشغيل جهاز ال'"; onmouseout="wsf.innerHTML='عايز تعمل ايه ؟'" onclick="load_Mira(); return false"><b>تفعيل ميرا </button>
+<button href="index.html#" style='font-size:25px;font-family:Cairo,sans-serif;width:180px;height:60px;text-align:center;color:#4863A0' class="pointer" onMouseOver="wsf.innerHTML='Debug Settings وتفعيل ال HEN تشغيل ال'"; onmouseout="wsf.innerHTML='عايز تعمل ايه ؟'" onclick="load_hen(); return false"><b>تفعيل التهكير</button>
+<br>
+<h1 style='font-size:48px;text-align:center;text-shadow: 4px 4px 4px black;color:#7CFD96'>الاضافات</h1>
+<br>
+<button href="index.html#" style='font-size:20px;text-align:center;color:#4863A0' class="pointer" onMouseOver="wsf.innerHTML='\u0644\u062A\u062D\u0645\u064A\u0644 \u0627\u064A \u0627\u0636\u0627\u0641\u0629 \u062A\u0631\u064A\u062F\u0647\u0627 \u0639\u0644\u0649 \u062C\u0647\u0627\u0632\u0643 \u0628\u0627\u0633\u062A\u062E\u062F\u0627\u0645 \u0628\u0648\u0631\u062A \u0631\u0642\u0645 9020'"; onmouseout="wsf.innerHTML='\u0639\u0627\u064A\u0632 \u062A\u0639\u0645\u0644 \u0627\u064A\u0647 \u061F'" onclick="load_binloader(); return false"> Bin Loader </button>
+<button href="index.html#" style='font-size:20px;text-align:center;color:#4863A0' class="pointer" onMouseOver="wsf.innerHTML='\u0644\u0644\u062F\u062E\u0648\u0644 \u0639\u0644\u0649 \u062C\u0647\u0627\u0632\u0643 \u0628\u0627\u0633\u062A\u062E\u062F\u0627\u0645 \u0628\u0631\u0648\u062A\u0648\u0643\u0648\u0644 \u0627\u062A\u0635\u0627\u0644 \u0627\u0641 \u062A\u064A \u0628\u064A'"; onmouseout="wsf.innerHTML='\u0639\u0627\u064A\u0632 \u062A\u0639\u0645\u0644 \u0627\u064A\u0647 \u061F'" onclick="load_ftp(); return false"> FTP </button>
+<button href="index.html#" style='font-size:20px;text-align:center;color:#4863A0' class="pointer" onMouseOver="wsf.innerHTML='fpkg \u0627\u0644\u0628\u062F\u0621 \u0641\u064A \u0627\u062E\u0630 \u0646\u0633\u062E\u0629 \u0645\u0646 \u0627\u0644\u0644\u0639\u0628\u0629 \u0639\u0644\u0649 \u0647\u0627\u0631\u062F\u064A\u0633\u0643 \u062E\u0627\u0631\u062C\u064A \u0644\u0639\u0645\u0644 \u0645\u0644\u0641\u0627\u062A'"; onmouseout="wsf.innerHTML='\u0639\u0627\u064A\u0632 \u062A\u0639\u0645\u0644 \u0627\u064A\u0647 \u061F'" onclick="load_dumper(); return false"> Dumper Game </button>
+<button href="index.html#" style='font-size:20px;text-align:center;color:#4863A0' class="pointer" onMouseOver="wsf.innerHTML='\u062A\u063A\u064A\u064A\u0631 \u0627\u0644\u0633\u0627\u0639\u0629 \u0627\u0644\u062F\u0627\u062E\u0644\u064A\u0629 \u0644\u0644\u062C\u0647\u0627\u0632 (\u0645\u0641\u064A\u062F \u0627\u0630\u0627 \u0643\u0627\u0646 \u0644\u062F\u064A\u0643 \u0627\u0644\u0639\u0627\u0628 \u0628\u064A \u0627\u0633 \u0628\u0644\u0633 \u0642\u062F\u064A\u0645\u0647)'"; onmouseout="wsf.innerHTML='\u0639\u0627\u064A\u0632 \u062A\u0639\u0645\u0644 \u0627\u064A\u0647 \u061F'" onclick="load_kernelclock(); return false"> Kernel Clock </button>
+<button href="index.html#" style='font-size:20px;text-align:center;color:#4863A0' class="pointer" onMouseOver="wsf.innerHTML='\u0646\u0642\u0644 \u062C\u0645\u064A\u0639 \u0627\u0644\u0639\u0627\u0628\u0643 \u0648\u0628\u0631\u0627\u0645\u062C\u0643 \u0627\u0644\u0649 \u0647\u0627\u0631\u062F\u064A\u0633\u0643 \u062E\u0627\u0631\u062C\u064A'"; onmouseout="wsf.innerHTML='\u0639\u0627\u064A\u0632 \u062A\u0639\u0645\u0644 \u0627\u064A\u0647 \u061F'" onclick="load_app2usb(); return false"> App2USB </button>
+<button href="index.html#" style='font-size:20px;text-align:center;color:#4863A0' class="pointer" onMouseOver="wsf.innerHTML='(\u0645\u0641\u064A\u062F \u0641\u064A \u062D\u0644 \u0628\u0639\u0636 \u0627\u062E\u0637\u0627\u0621 \u0628\u0644\u0627\u064A\u0633\u062A\u064A\u0634\u0646) Debug settings \u064A\u0636\u064A\u0641 \u0645\u062C\u0645\u0648\u0639\u0629 \u0645\u0645\u064A\u0632\u0627\u062A \u0627\u062E\u0631\u0649  \u0644'"; onmouseout="wsf.innerHTML='\u0639\u0627\u064A\u0632 \u062A\u0639\u0645\u0644 \u0627\u064A\u0647 \u061F'" onclick="load_todex(); return false"> ToDex </button>
+<br><br>
+<button href="index.html#" style='font-size:20px;text-align:center;color:#4863A0' class="pointer" onMouseOver="wsf.innerHTML='\u0644\u0639\u0645\u0644 \u0646\u0633\u062E\u0629 \u0627\u062D\u062A\u064A\u0627\u0637\u064A\u0629 \u0645\u0646 \u0627\u0644\u0645\u0644\u0641\u0627\u062A \u0627\u0644\u0645\u0647\u0645\u0629 \u0641\u064A \u0642\u0627\u0639\u062F\u0629 \u0627\u0644\u0628\u064A\u0627\u0646\u0627\u062A \u0648\u0628\u0639\u0636 \u0645\u0644\u0641\u0627\u062A \u0627\u0644\u0645\u0633\u062A\u062E\u062F\u0645'"; onmouseout="wsf.innerHTML='\u0639\u0627\u064A\u0632 \u062A\u0639\u0645\u0644 \u0627\u064A\u0647 \u061F'" onclick="load_backup(); return false"> DB Backup </button>
+<button href="index.html#" style='font-size:20px;text-align:center;color:#4863A0' class="pointer" onMouseOver="wsf.innerHTML='\u0644\u0627\u0633\u062A\u0639\u062F\u0627\u0629 \u0627\u0644\u0646\u0633\u062E\u0629 \u0627\u0644\u0627\u062D\u062A\u064A\u0627\u0637\u064A\u0629 \u0645\u0646 \u0642\u0627\u0639\u062F\u0629 \u0627\u0644\u0628\u064A\u0627\u0646\u0627\u062A \u0648\u0645\u0644\u0641\u0627\u062A \u0627\u0644\u0645\u0633\u062A\u062E\u062F\u0645'"; onmouseout="wsf.innerHTML='\u0639\u0627\u064A\u0632 \u062A\u0639\u0645\u0644 \u0627\u064A\u0647 \u061F'" onclick="load_restore(); return false"> DB Restore </button>
+<button href="index.html#" style='font-size:20px;text-align:center;color:#4863A0' class="pointer" onMouseOver="wsf.innerHTML='\u0627\u064A\u0642\u0627\u0641 \u0627\u0644\u062A\u062D\u062F\u064A\u062B \u0627\u0644\u062A\u0644\u0642\u0627\u0626\u064A \u0644\u0646\u0638\u0627\u0645 \u0627\u0644\u062A\u0634\u063A\u064A\u0644'"; onmouseout="wsf.innerHTML='\u0639\u0627\u064A\u0632 \u062A\u0639\u0645\u0644 \u0627\u064A\u0647 \u061F'" onclick="load_updatesDisable(); return false">Disable Update</button>
+<button href="index.html#" style='font-size:20px;text-align:center;color:#4863A0' class="pointer" onMouseOver="wsf.innerHTML='\u062A\u0641\u0639\u064A\u0644 \u0627\u0644\u062A\u062D\u062F\u064A\u062B \u0627\u0644\u062A\u0644\u0642\u0627\u0626\u064A \u0644\u0646\u0638\u0627\u0645 \u0627\u0644\u062A\u0634\u063A\u064A\u0644'"; onmouseout="wsf.innerHTML='\u0639\u0627\u064A\u0632 \u062A\u0639\u0645\u0644 \u0627\u064A\u0647 \u061F'" onclick="load_updatesEnable(); return false"> Enable Update </button>
+<button href="index.html#" style='font-size:20px;text-align:center;color:#4863A0' class="pointer" onMouseOver="wsf.innerHTML='\u0645\u0646\u0639 \u0645\u062A\u0635\u0641\u062D \u0627\u0644\u0627\u0646\u062A\u0631\u0646\u062A \u0645\u0646 \u0628\u062F\u0621 \u0627\u0644\u062A\u0634\u063A\u064A\u0644 \u0639\u0646\u062F \u0627\u062E\u0631 \u0635\u0641\u062D\u0629 \u0642\u0645\u062A \u0628\u0632\u064A\u0627\u0631\u062A\u0647\u0627 '"; onmouseout="wsf.innerHTML='\u0639\u0627\u064A\u0632 \u062A\u0639\u0645\u0644 \u0627\u064A\u0647 \u061F'" onclick="load_historyBlocker(); return false"> History Blocker </button>
+<button href="index.html#" style='font-size:20px;text-align:center;color:#4863A0' class="pointer" onMouseOver="wsf.innerHTML='\u0627\u0644\u0633\u0645\u0627\u062D \u0644\u0645\u062A\u0635\u0641\u062D \u0627\u0644\u0627\u0646\u062A\u0631\u0646\u062A \u0628\u062A\u0630\u0643\u0631 \u0627\u062E\u0631 \u0635\u0641\u062D\u0629 \u0642\u0645\u062A \u0628\u0632\u064A\u0627\u0631\u062A\u0647\u0627 \u0648\u062A\u0634\u063A\u064A\u0644\u0647\u0627 \u0641\u064A \u0627\u0644\u0645\u0631\u0629 \u0627\u0644\u0645\u0642\u0628\u0644\u0629'"; onmouseout="wsf.innerHTML='\u0639\u0627\u064A\u0632 \u062A\u0639\u0645\u0644 \u0627\u064A\u0647 \u061F'" onclick="load_enablebrowser(); return false"> Enable Browser </button>
+<br><br>
+<button href="index.html#" style='font-size:20px;text-align:center;color:#4863A0' class="pointer" onMouseOver="wsf.innerHTML='USB \u0644\u062A\u0634\u063A\u064A\u0644 \u0646\u0638\u0627\u0645 \u0644\u064A\u0646\u0643\u0633 \u0645\u0646 \u0627\u0644'"; onmouseout="wsf.innerHTML='\u0639\u0627\u064A\u0632 \u062A\u0639\u0645\u0644 \u0627\u064A\u0647 \u061F'" onclick="load_linux(); return false"> Linux Loader </button>
+<button href="index.html#" style='font-size:20px;text-align:center;color:#4863A0' class="pointer" onMouseOver="wsf.innerHTML='PS4 Cheater \u0648 PS4OfflineAccountActivator \u062A\u0641\u0639\u064A\u0644 \u0642\u0631\u0627\u0621\u0629 \u0628\u064A\u0627\u0646\u0627\u062A \u0627\u0644\u0631\u0627\u0645 \u0644\u0627\u0633\u062A\u062E\u062F\u0627\u0645\u0647\u0627 \u0645\u0639 \u0628\u0631\u0627\u0645\u062C \u0645\u0639\u064A\u0646\u0647 \u0645\u062B\u0644 '"; onmouseout="wsf.innerHTML='\u0639\u0627\u064A\u0632 \u062A\u0639\u0645\u0644 \u0627\u064A\u0647 \u061F'" onclick="load_ps4debug(); return false"> PS4 Debug </button>
+<button href="index.html#" style='font-size:20px;text-align:center;color:#4863A0' class="pointer" onMouseOver="wsf.innerHTML='(\u064A\u062C\u0628 \u062A\u0634\u063A\u064A\u0644\u0647 \u0645\u0639 \u0645\u064A\u0631\u0627) PSVR \u0644\u062A\u0634\u063A\u064A\u0644 '"; onmouseout="wsf.innerHTML='\u0639\u0627\u064A\u0632 \u062A\u0639\u0645\u0644 \u0627\u064A\u0647 \u061F'" onclick="load_psvr(); return false"> PSVR </button>
+<button href="index.html#" style='font-size:20px;text-align:center;color:#4863A0' class="pointer" onMouseOver="wsf.innerHTML=' CE-30391-6 \u0644\u062D\u0644 \u0645\u0634\u0643\u0644\u0629 \u062E\u0637\u0623 '"; onmouseout="wsf.innerHTML='\u0639\u0627\u064A\u0632 \u062A\u0639\u0645\u0644 \u0627\u064A\u0647 \u061F'" onclick="load_30391(); return false"> 30391 </button>
+<br><br><br><br><br><br><br>
+</div>
+<script>
+function load_hen(){
+
+  var link = document.createElement('a');
+        document.body.appendChild(link);
+        link.href = 'HEN.html';
+        link.click();
+}
+function load_Mira(){
+
+  var link = document.createElement('a');
+        document.body.appendChild(link);
+        link.href = 'MIRA.html';
+        link.click();
+}
+function load_app2usb(){
+
+  var link = document.createElement('a');
+        document.body.appendChild(link);
+        link.href = 'App2USB.html';
+        link.click();
+}
+function load_backup(){
+
+  var link = document.createElement('a');
+        document.body.appendChild(link);
+        link.href = 'Backup.html';
+        link.click();
+}
+function load_restore(){
+
+  var link = document.createElement('a');
+        document.body.appendChild(link);
+        link.href = 'Restore.html';
+        link.click();
+}
+function load_updatesDisable(){
+
+  var link = document.createElement('a');
+        document.body.appendChild(link);
+        link.href = 'Disable-Updates.html';
+        link.click();
+}
+function load_updatesEnable(){
+
+  var link = document.createElement('a');
+        document.body.appendChild(link);
+        link.href = 'Enable-Updates.html';
+        link.click();
+}
+function load_dumper(){
+
+  var link = document.createElement('a');
+        document.body.appendChild(link);
+        link.href = 'Dumper.html';
+        link.click();
+}
+function load_enablebrowser(){
+
+  var link = document.createElement('a');
+        document.body.appendChild(link);
+        link.href = 'Enable-Browser.html';
+        link.click();
+}
+function load_historyBlocker(){
+
+  var link = document.createElement('a');
+        document.body.appendChild(link);
+        link.href = 'History-Blocker.html';
+        link.click();
+}
+function load_ftp(){
+
+  var link = document.createElement('a');
+        document.body.appendChild(link);
+        link.href = 'FTP.html';
+        link.click();
+}
+function load_kernelclock(){
+
+  var link = document.createElement('a');
+        document.body.appendChild(link);
+        link.href = 'Kernel-Clock.html';
+        link.click();
+}
+function load_todex(){
+
+  var link = document.createElement('a');
+        document.body.appendChild(link);
+        link.href = 'todex.html';
+        link.click();
+}
+function load_binloader(){
+
+  var link = document.createElement('a');
+        document.body.appendChild(link);
+        link.href = 'Binloader.html'; 
+        link.click();
+}
+function load_linux(){
+
+  var link = document.createElement('a');
+        document.body.appendChild(link);
+        link.href = 'linux.html';
+        link.click();
+}
+function load_ps4debug(){
+
+  var link = document.createElement('a');
+        document.body.appendChild(link);
+        link.href = 'PS4debug.html';
+        link.click();
+}
+function load_psvr(){
+
+  var link = document.createElement('a');
+        document.body.appendChild(link);
+        link.href = 'psvr.html';
+        link.click();
+}
+function load_30391(){
+
+  var link = document.createElement('a');
+        document.body.appendChild(link);
+        link.href = '30391.html';
+        link.click();
+}
+</script>
+</div>
+</body>
+</html>

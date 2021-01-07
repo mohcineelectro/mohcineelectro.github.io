@@ -1,0 +1,59 @@
+<html>
+	<head>
+		<script src="DrCable.js"></script>
+	</head>
+<body onload="go()">
+<script>
+if(document.cookie.indexOf('kex=0') >= 0)
+    document.location.href = 'index.html';
+</script>
+<script>
+function print(){}
+
+var scriptCode = '';
+
+function preloadScripts(lst)
+{
+    for(var i = 0; i < lst.length; i++)
+    {
+        var xhr = new XMLHttpRequest();
+        xhr.open('GET', lst[i], false);
+        xhr.send('');
+        scriptCode += xhr.responseText + '\n';
+    }
+}
+
+function done()
+{
+    if(main_ret == 0 || main_ret == 179)
+    {
+        alert("\u0643\u062F\u0647 \u0643\u0644\u0647 \u062A\u0645\u0627\u0645!\n \u0627\u0642\u0641\u0644 \u0627\u0644\u0635\u0641\u062D\u0629 \u0648\u0627\u0642\u0641\u0644 \u0627\u0644\u0645\u062A\u0635\u0641\u062D \n \u0645\u0639 \u062A\u062D\u064A\u0627\u062A \u062F. \u0643\u064A\u0628\u0644");
+        read_ptr_at(0);
+    }
+    else
+        alert("\u0644\u0644\u0627\u0633\u0641 \u062D\u0635\u0644\u062A \u0645\u0634\u0643\u0644\u0629 \n \u0628\u0631\u062C\u0627\u0621 \u0627\u0639\u0627\u062F\u0629 \u062A\u0634\u063A\u064A\u0644 \u0627\u0644\u062C\u0647\u0627\u0632 \u0648\u0627\u0644\u0645\u062D\u0627\u0648\u0644\u0629 \u0645\u0631\u0629 \u0623\u062E\u0631\u0649.");
+}
+
+window.midExploit = function()
+{
+    preloadScripts(['702.js', 'jb.js', 'mira.js', 'FTP.js', 'c-code.js'], go);
+}
+
+window.postExploit = function()
+{
+    document.cookie = 'kex=0';
+    setTimeout(function() //update the screen one last time...
+    {
+        eval.call(window, scriptCode);
+        done();
+    }, 100);
+};
+</script>
+<button id="input1" onfocus="handle2()"></button>
+<button id="input2"></button>
+<button id="input3" onfocus="handle2()"></button>
+<select id="select1">
+<option value="value1"> Youtube: DrCable </option>
+</select>
+</body>
+</html>
