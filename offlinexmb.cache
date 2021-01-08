@@ -1,15 +1,20 @@
 CACHE MANIFEST 
 # v2.5.5 Self-Host 
 
-1.jpg
+30391.html
+30391.js
 702.js
 App2USB.html
 App2USB.js
 Backup.html
 Backup.js
+Binloader.html
+Binloader.js
 c-code.js
 Disable-Updates.html
 Disable-Updates.js
+DRC.jpg
+mohcineelectro.js
 Dumper.html
 Dumper.js
 Enable-Browser.html
@@ -19,6 +24,7 @@ Enable-Updates.js
 FTP.html
 FTP.js
 HEN.html
+HEN.js
 History-Blocker.html
 History-Blocker.js
 index.html
@@ -26,19 +32,21 @@ int64.js
 jb.js
 Kernel-Clock.html
 Kernel-Clock.js
+linux.html
+linux.js
+MIRA.html
 mira.js
-mira2.js
-ps4-hen-vtx-702.js
+mira_pl.js
 ps4.js
+PS4debug.html
+PS4debug_pl.js
+PS4debug_ul.js
+PSVR.html
+PSVR.js
 Restore.html
 Restore.js
+rop.js
 Style.css
 todex.html
 todex.js
 utils.js
-BinLoader\index.html
-BinLoader\int64.js
-BinLoader\ps4.js
-BinLoader\rop.js
-BinLoader\userland.js
-BinLoader\utils.js
