@@ -1,0 +1,29 @@
+body{background-repeat: no-repeat;background-attachment: fixed;background-size: 100% 100%;}
+img:hover {transform: scale(1.2); /* (100% zoom - Note: if the zoom is too large, it will go outside of the viewport) */}
+.center{display: block;margin-left: auto;margin-right: auto;}
+.rangefan {        -webkit-appearance: none;        vertical-align: middle;outline: 5;padding: 0;border: 1px solid #FFFFFF;background: #FFFFFF;border-radius: 10px;width: 50%;}.rangefan::-webkit-slider-runnable-track {background-color: 0 0;height: 6px;border-radius: 3px;border: 1px solid transparent;}.rangefan::-webkit-slider-thumb {-webkit-appearance: none !important;border-radius: 100%;background-color: #b10000;height: 18px;width: 18px;margin-top: -7px;}.rangefan:active::-ms-thumb {border: none;}#outputfan {border: 1px solid #d7dbdd;font-size: 15px;padding: 0.3em 0.3em;margin: 0.1em;border-radius: 3px;min-width: 2em;text-align: center;}#submitfan {border: 1px solid #d7dbdd;background: 0 0;font-size: 15px;padding: 0.3em 0.3em;margin: 0.1em; border-radius: 3px; text-align: center;color:#fff;}
+	
+#cacheInfo{
+position:absolute;bottom:10px;left:15px;font-size:32px;text-shadow: 4px 4px 4px black;font-weight:bold;display:inline-block;z-index:1;
+}
+
+#CacheProgress {
+position:fixed;left:0;right:0;top:50;bottom:10px;max-width:100%;max-height:100%;margin:auto;
+width:1076px;height:15px;
+background-color:#1B3D8F;box-shadow:0 0 0 2px #BBCEEF;
+}
+#CacheBar {
+width:0%;height:100%;background-color:red;
+}
+.cacheUPDbg {transition:opacity 1000ms;
+position:fixed;left:0;right:0;top:0;bottom:0;max-width:100%;max-height:100%;margin:auto;	
+width:100%;height:100%;
+background:url("7xx.jpg");
+opacity:1;display:none;z-index:900;
+}
+.cacheUPD {
+position:fixed;left:0%;right:0;top:280px;bottom:0px;max-width:100%;max-height:100%;margin:auto;	
+width:1100px;height:400px;
+line-height:30px;align-items:left;
+font-family:sans-serif;font-size:32px;text-shadow: 4px 4px 4px black;text-align:center;color:white;z-index:901;
+}
