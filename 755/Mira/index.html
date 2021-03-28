@@ -1,6 +1,6 @@
 <html>
 <head>
-<title>Mira ÊÝÚíá  (7.50-7.55)</title>
+<title>Mira (7.5x-7.55)</title>
 </head>
   <style>
     body{color: white; background-image:url(1.jpg); background-attachment:fixed; background-size:100%; background-repeat:no-repeat;}
@@ -34,15 +34,15 @@ function done() {
 }
 
 window.midExploit = function() {
-  var scripts = ['blob.js', 'jb.js'];
+  var scripts = ['./blob.js', './jb.js'];
 
   if (fwFromUA != "750" && fwFromUA != "751" && fwFromUA != "755") {
     die('Unsupported Firmware!');
   }
 
-  scripts.push('loader-' + fwFromUA + '.js');
-  scripts.push('mira-' + fwFromUA + '.js');
-  scripts.push('netcat.js');
+  scripts.push('./loader-' + fwFromUA + '.js');
+  scripts.push('./mira-' + fwFromUA + '.js');
+  scripts.push('./netcat.js');
 
   preloadScripts(scripts, go);
 }
@@ -54,9 +54,9 @@ window.postExploit = function() {
   }, 100);
 };
 </script>
-<script src="utils.js"></script>
-<script src="int64.js"></script>
-<script src="ps4.js"></script>
+<script src="./utils.js"></script>
+<script src="./int64.js"></script>
+<script src="./ps4.js"></script>
 <button id="input1" onfocus="handle2()"></button>
 <button id="input2"></button>
 <button id="input3" onfocus="handle2()"></button>
