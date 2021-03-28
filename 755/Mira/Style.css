@@ -1,55 +1,25 @@
-html, body{
+html,
+body{
 margin:auto;
-font-family:sans-serif;
+font-family: Cairo, sans-serif;
 font-size:20px;
 font-weight:lighter;
-text-align:left;
+text-align:right;
 color:#FFFFFF;
 background-size:cover;
 }
-.modal {
-  display: none; /* Hidden by default */
-  position: fixed; /* Stay in place */
-  z-index: 1; /* Sit on top */
-  padding-top: 100px; /* Location of the box */
-  left: 0;
-  top: 0;
-  width: 100%; /* Full width */
-  height: 100%; /* Full height */
-  overflow: auto; /* Enable scroll if needed */
-  background-color: rgb(0,0,0); /* Fallback color */
-  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
-}
-
-/* Modal Content */
-.modal-content {
-  font-family: BFARNAZ;
-  font-size: 18px;
-  position: relative;
-  background-color: #dddddd;
-  margin: auto;
-  padding: 0;
-  border: 1px solid #888;
-  width: 50%;
-  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
-  -webkit-animation-name: animatetop;
-  -webkit-animation-duration: 0.4s;
-  animation-name: animatetop;
-  animation-duration: 0.4s
-}
-.vid
-{
+.vid {
     object-fit: inherit;
     position: fixed;
-    right: 0;
+    left: 0;
     z-index: -1;
     bottom: 0;
     min-width: 100%;
     min-height: 100%;
     opacity: 0.4;
 }
-.bg-darker {
-    background-color: #24272b !important;
+.bg-color {
+    background-color: #080714 !important;
 }
 button {
             background-color: white;
@@ -58,20 +28,22 @@ button {
             width: 170px;
             height: 40px;            
             text-align: center;
+			font-weight: bold;
 }
 button:hover {
-            box-shadow: 0 5px 50px 0 white;
-            color: white;
+            box-shadow: 0 5px 50px 0 #ffff01;
+            color: #ffff01;
             border-radius: 10px;
+			font-weight: lighter;
 }
 #PF {
-position:fixed; right:0; top:0;  margin:auto; max-width:100%; max-height:100%;
+position:fixed; left:0; top:0;  margin:auto; max-width:100%; max-height:100%;
 width:200px;
 height:50px;
 z-index:10;
 }
 .bgIMG {
-position:fixed; left:0; right:0; top:0; bottom:0; margin:auto; max-width:100%; max-height:100%;
+position:fixed; right:0; left:0; top:0; bottom:0; margin:auto; max-width:100%; max-height:100%;
 width:100%;
 height:100%;
 background-size:cover;
@@ -92,7 +64,7 @@ opacity:0.7;
 }
 
 #defaultItem{
-position:relative; left:0; right:0; top:0; bottom:0; margin:auto; max-width:100%; max-height:100%;
+position:relative; right:0; left:0; top:0; bottom:0; margin:auto; max-width:100%; max-height:100%;
 width:1345px;	
 font-size:34px;
 display:block;
@@ -105,14 +77,14 @@ position:relative;
 margin:0px 0px -2px 0px;
 display:block;
 width:1215px;
-left:100px;
+right:100px;
 bottom:25px;
 font-size:22px;
 font-weight:lighter;
 opacity:0.7;
 }
 .item {
-position:relative; left:0; right:0; top:0; bottom:0; margin:auto; max-width:100%; max-height:100%;
+position:relative; right:0; left:0; top:0; bottom:0; margin:auto; max-width:100%; max-height:100%;
 width:1345px;
 }
 .item a {
@@ -137,14 +109,14 @@ text-transform:none;
 letter-spacing:normal;
 word-wrap:normal;
 white-space:nowrap;
-direction:ltr;
-padding:12px 15px 12px 20px;
+direction:rtl;
+padding:12px 20px 12px 15px;
 vertical-align:middle;
 -webkit-font-smoothing:antialiased;
 text-rendering:optimizeLegibility;
 }
 .Title {
-padding:3px 0px 25px 10px;
+padding:3px 10px 25px 0px;
 margin:0px 0px -15px 0px;
 width:1000px;
 display:inline-block;
@@ -155,7 +127,7 @@ position:relative;
 margin:0px 0px -2px 0px;
 display:none;
 width:1215px;
-left:100px;
+right:100px;
 bottom:25px;
 font-size:22px;
 font-weight:lighter;
@@ -166,20 +138,20 @@ display:block;
 }
 .Divider {
 width:1260px;
-margin:-3px 0px -2px 90px;
+margin:-3px 90px -2px 0px;
 vertical-align:middle;
 border-style:solid;
 border-width:2px 0px 2px 0px;
 border-color:transparent transparent rgba(255, 255, 255, 0.3) transparent;
 }
 .exploitWIN {
-position:fixed; left:0; right:0; top:0; bottom:0; margin:auto; max-width:100%; max-height:100%; 
+position:fixed; right:0; left:0; top:0; bottom:0; margin:auto; max-width:100%; max-height:100%; 
 min-width:100%;
 min-height:100%;
 overflow:hidden;
 }
 .txt1 {
-position:absolute; left:0; right:0; top:0; bottom:0; margin:auto; max-width:100%; max-height:100%;
+position:absolute; right:0; left:0; top:0; bottom:0; margin:auto; max-width:100%; max-height:100%;
 width:900;
 height:30;
 top:0;
@@ -187,17 +159,17 @@ bottom:100;
 font-size:32px;
 text-align:center;
 color: yellow;
-text-shadow: 4px 4px 4px black;
+text-shadow: -4px 4px 4px black;
 }
 .container {
-position:absolute; left:0; right:0; top:0; bottom:0; margin:auto; max-width:100%; max-height:100%;
+position:absolute; right:0; left:0; top:0; bottom:0; margin:auto; max-width:100%; max-height:100%;
 width:1000px;  
 height:15px;
 top:80;
 border:2px solid rgba(255,255,255,0.6);
 }
 .txt2 {
-position:absolute; left:0; right:0; top:0; bottom:0; margin:auto; max-width:100%; max-height:100%;
+position:absolute; right:0; left:0; top:0; bottom:0; margin:auto; max-width:100%; max-height:100%;
 width:600;
 height:30;
 top:180;
@@ -205,11 +177,11 @@ top:180;
 font-size:28px;
 font-weight:bold;
 text-align:center;
-text-shadow: 4px 4px 4px black;
+text-shadow: -4px 4px 4px black;
 opacity:0.7;
 }
 .AniGif {
-position:absolute; left:0; right:0; top:0; bottom:0; margin:auto; max-width:100%; max-height:100%;
+position:absolute; right:0; left:0; top:0; bottom:0; margin:auto; max-width:100%; max-height:100%;
 width:1000px;
 height:15px;
 top:80;
@@ -267,24 +239,24 @@ animation-timing-function:ease-out;
 animation-fill-mode:forwards;
 }
 @keyframes slidez0 {
-from {left:0px; width:0px; background:rgba(255,255,255,0.9);}
-to {left:0px; width:500px;background:rgba(255,255,255,0.9);}
+from {right:0px; width:0px; background:rgba(255,255,255,0.9);}
+to {right:0px; width:500px;background:rgba(255,255,255,0.9);}
 }
 @keyframes slidez1 {
-from {left:0px; width:0px; background:rgba(255,255,255,0.9);}
-to {left:0px; width:300px;background:rgba(255,255,255,0.9);}
+from {right:0px; width:0px; background:rgba(255,255,255,0.9);}
+to {right:0px; width:300px;background:rgba(255,255,255,0.9);}
 }
 @keyframes slidez2 {
-from {left:0px; width:301px; background:rgba(255,255,255,0.9);}
-to {left:0px; width:500px;background:rgba(255,255,255,0.9);}
+from {right:0px; width:301px; background:rgba(255,255,255,0.9);}
+to {right:0px; width:500px;background:rgba(255,255,255,0.9);}
 }
 @keyframes slidez3 {
-from {left:0px; width:501px; background:rgba(255,255,255,0.9);}
-to {left:0px; width:850px;background:rgba(255,255,255,0.9);}
+from {right:0px; width:501px; background:rgba(255,255,255,0.9);}
+to {right:0px; width:850px;background:rgba(255,255,255,0.9);}
 }
 @keyframes slidez4 {
-from {left:0px; width:851px; background:rgba(255,255,255,0.9);}
-to {left:0px; width:1000px;background:rgba(255,255,255,0.9);}
+from {right:0px; width:851px; background:rgba(255,255,255,0.9);}
+to {right:0px; width:1000px;background:rgba(255,255,255,0.9);}
 }
 #Tick {margin:auto;
 display:inline-block;
@@ -304,7 +276,7 @@ width:30px;
 border:0px solid #ccc;
 }
 .info {
-position:absolute; left:0; right:0; top:0; bottom:0; margin:auto; max-width:100%; max-height:100%;
+position:absolute; right:0; left:0; top:0; bottom:0; margin:auto; max-width:100%; max-height:100%;
 width:1200px;
 height:30px;
 bottom:180px;
@@ -313,7 +285,7 @@ text-align:center;
 }
 .txt {
 position:absolute;
-left:235px;
+right:235px;
 top:390px;
 width:265px;
 height:54px;
@@ -325,98 +297,63 @@ padding:3 0 0 0;
 z-index:100;
 }
 #cacheInfo{
-position:absolute;bottom:10px;left:15px;font-size:32px;text-shadow: 4px 4px 4px black;font-weight:bold;display:inline-block;z-index:1;
+position:absolute;bottom:10px;right:15px;font-size:32px;text-shadow: -4px 4px 4px black;font-weight:bold;display:inline-block;z-index:1;
 }
 
 #CacheProgress {
-position:fixed;left:0;right:0;top:50;bottom:10px;max-width:100%;max-height:100%;margin:auto;
+position:fixed;right:0;left:0;top:50;bottom:10px;max-width:100%;max-height:100%;margin:auto;
 width:1076px;height:15px;
 background-color:#1B3D8F;box-shadow:0 0 0 2px #BBCEEF;
 }
 #CacheBar {
-width:0%;height:100%;background-color:green;
+width:0%;height:100%;background-color:yellow;
 }
 .cacheUPDbg {transition:opacity 1000ms;
-position:fixed;left:0;right:0;top:0;bottom:0;max-width:100%;max-height:100%;margin:auto;	
+position:fixed;right:0;left:0;top:0;bottom:0;max-width:100%;max-height:100%;margin:auto;	
 width:100%;height:100%;
-background:url("1.jpg");
+background:url("755.jpg");
+background-size:cover;
 opacity:1;display:none;z-index:900;
 }
-.cacheUPD {
-position:fixed;left:0%;right:0;top:280px;bottom:0px;max-width:100%;max-height:100%;margin:auto;	
+.cacheUPD.cacheUPD {
+position:fixed;right:0%;left:0;top:280px;bottom:0px;max-width:100%;max-height:100%;margin:auto;	
 width:1100px;height:400px;
 line-height:30px;align-items:left;
-font-family:sans-serif;font-size:32px;text-shadow: 4px 4px 4px black;text-align:center;color:white;z-index:901;
-}
-#clock{
- float:right;
- margin-right:2.25%;
- margin-top: 18px;
- font-weight:bold;
- font-size:28px;
-  color: white;
-}
-#date {
- float:left;
- margin-left:1.25%;
- font-weight:bold;
- margin-top: 18px;
- font-size:28px;
- color: white;
+font-family: 'Cairo', sans-serif;font-size:32px;text-shadow: -4px 4px 4px black;text-align:center;color:white;z-index:901;
 }
 #donate2{
- float:right;
- margin-right:2.25%;
+ float:left;
+ margin-left:2.25%;
  margin-top: 11px;
  font-weight:bold;
  font-size:28px;
   color: white;
 }
 #donate {
- float:left;
- margin-left:1.25%;
+ float:right;
+ margin-right:1.25%;
  font-weight:bold;
  margin-top: 11px;
  font-size:28px;
  color: white;
 }
-#msgs2 {
+#wsf {
  font-weight:bold;
- text-shadow: 4px 4px 4px black;
- padding-right: 60px;
- margin-right: 60px;
+ text-shadow: -4px 4px 4px black;
+ padding-left: 60px;
+ margin-left: 60px;
  font-size:17px;
+ text-align:right;
 }
 .pointer {cursor: pointer;}
 
-#msgs {
-text-shadow: 4px 4px 4px black;
- font-size:32px;
-}
+
 #done {
-text-shadow: 4px 4px 4px black;
+text-shadow: -4px 4px 4px black;
 
  font-size:32px;
 }
 #fail {
-text-shadow: 4px 4px 4px black;
+text-shadow: -4px 4px 4px black;
  font-size:32px;
-}
-.about a{
- float:left;
- margin-left:1.25%;
- font-weight:bold;
- margin-top: 11px;
- font-size:25px;
- color:#7CFD96;
- text-shadow: 4px 4px 4px black;
-}
-.theme a{
- float:right;
- margin-right:1.25%;
- font-weight:bold;
- margin-top: 11px;
- font-size:25px;
- color:#7CFD96;
- text-shadow: 4px 4px 4px black;
 }
