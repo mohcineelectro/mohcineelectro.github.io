@@ -4,8 +4,7 @@ CACHE MANIFEST
 index.html
 755.jpg
 1.jpg
-hengold.html
-Mira.html
+
 
 js/materialize.js
 js/vue.js
@@ -23,6 +22,7 @@ hengold/loader-751.js
 hengold/loader-755.js
 hengold/netcat.js
 hengold/utils.js
+hengold/ps4.js
 
 Mira/1.jpg
 Mira/blob.js
@@ -38,6 +38,7 @@ Mira/mira-755.js
 Mira/netcat.js
 Mira/Style.css
 Mira/utils.js
+Mira/ps4.js
 
 
 css/icon.css
