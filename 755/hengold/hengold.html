@@ -1,14 +1,12 @@
 <html>
 <head>
-<title>Hen (7.55-7.55)</title>
+<title>hen  ›⁄Ì·  (7.50-7.55)</title>
 </head>
-
   <style>
     body{color: white; background-image:url(1.jpg); background-attachment:fixed; background-size:100%; background-repeat:no-repeat;}
     input{width:25px;height:25px;background-color: transparent;}
 
         </style>
-
 
 <body onload="go()">
 <script>
@@ -33,23 +31,23 @@ function preloadScripts(lst) {
 
 function done() {
   if (main_ret == 0 || main_ret == 179) {
-    alert('You\'re all set!');
+    alert(' „  ⁄„·Ì… «· ÂﬂÌ— »‰Ã«Õ!\n «ﬁ›· «·’›Õ… Ê«ﬁ›· «·„ ’›Õ');
     read_ptr_at(0);
   }  else {
-    alert('Jailbreak failed! Reboot your PS4 and try again.');
+    alert('··«”› Õ’·  „‘ﬂ·… \n »—Ã«¡ «⁄«œ…  ‘€Ì· «·ÃÂ«“ Ê«·„Õ«Ê·… „—… √Œ—Ï.');
   }
 }
 
 window.midExploit = function() {
-  var scripts = ['./blob.js', './jb.js'];
+  var scripts = ['blob.js', 'jb.js'];
 
   if (fwFromUA != "750" && fwFromUA != "751" && fwFromUA != "755") {
     die('Unsupported Firmware!');
   }
 
-  scripts.push('./loader-' + fwFromUA + '.js');
-  scripts.push('./goldhen-' + fwFromUA + '.js');
-  scripts.push('./netcat.js');
+  scripts.push('loader-' + fwFromUA + '.js');
+  scripts.push('goldhen-' + fwFromUA + '.js');
+  scripts.push('netcat.js');
 
   preloadScripts(scripts, go);
 }
@@ -64,14 +62,14 @@ window.postExploit = function()
     }, 100);
 };
 </script>
-<script src="./utils.js"></script>
-<script src="./int64.js"></script>
-<script src="./ps4.js"></script>
+<script src="utils.js"></script>
+<script src="int64.js"></script>
+<script src="ps4.js"></script>
 <button id="input1" onfocus="handle2()"></button>
 <button id="input2"></button>
 <button id="input3" onfocus="handle2()"></button>
 <select id="select1">
-<option value="value1">Youtube: mohcineelectro </option>
+<option value="value1">Youtube: mohcineelectro</option>
 </select>
 </body>
 </html>
