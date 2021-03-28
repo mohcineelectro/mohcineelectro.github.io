@@ -2,12 +2,11 @@ CACHE MANIFEST
 # v2.5.5 Self-Host 
 
 index.html
-css/icon.css
-css/iconhome.css
-css/main.css
-css/mainhome.css
-css/materialize.css
-css/materializehome.css
+755.jpg
+
+js/materialize.js
+js/vue.js
+
 hengold/1.jpg
 hengold/blob.js
 hengold/goldhen-750.js
@@ -21,6 +20,32 @@ hengold/loader-751.js
 hengold/loader-755.js
 hengold/netcat.js
 hengold/utils.js
+
+Mira/1.jpg
+Mira/blob.js
+Mira/index.html
+Mira/int64.js
+Mira/jb.js
+Mira/loader-750.js
+Mira/loader-751.js
+Mira/loader-755.js
+Mira/mira-750.js
+Mira/mira-751.js
+Mira/mira-755.js
+Mira/netcat.js
+Mira/Style.css
+Mira/utils.js
+
+
+css/icon.css
+css/iconhome.css
+css/main.css
+css/mainhome.css
+css/materialize.css
+css/materializehome.css
+
+
+
 img/app2usb.png
 img/avatarDumper.png
 img/backup.png
@@ -56,22 +81,11 @@ img/restore.png
 img/rte.png
 img/SaveGame.png
 img/todex.png
+
 js/materialize.js
 js/vue.js
-Mira/1.jpg
-Mira/blob.js
-Mira/index.html
-Mira/int64.js
-Mira/jb.js
-Mira/loader-750.js
-Mira/loader-751.js
-Mira/loader-755.js
-Mira/mira-750.js
-Mira/mira-751.js
-Mira/mira-755.js
-Mira/netcat.js
-Mira/Style.css
-Mira/utils.js
+
+
 
 
 
