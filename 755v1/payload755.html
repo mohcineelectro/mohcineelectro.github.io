@@ -1,19 +1,24 @@
 <html>
     <style>
-        body{color: white; background-image:url(1.jpg); background-attachment:fixed; background-size:100%; background-repeat:no-repeat;}
-        input{width:25px;height:25px;background-color: transparent;}
-        button {
-                    background-color: white;
-                    border: 2px solid black;
-                    border-radius: 10px;
-                    text-align: center;
-        }
-        button:hover {
-                    box-shadow: 0 5px 50px 0 white;
-                    color: white;
-                    border-radius: 10px;
-        }</style>
+body{color: white; background-image:url(1.jpg); background-attachment:fixed; background-size:100%; background-repeat:no-repeat;}
+input{width:25px;height:25px;background-color: transparent;}
+button {
+            background-color: white;
+            border: 2px solid black;
+            border-radius: 10px;
+            text-align: center;
+}
+button:hover {
+            box-shadow: 0 5px 50px 0 white;
+            color: white;
+            border-radius: 10px;
+}</style>
 <body onload="go()">
+<script>
+
+if(document.cookie.indexOf('kex=0') >= 0)
+    document.location.href = 'index.html';
+</script>
 <script>
 function print(){}
 
@@ -43,11 +48,18 @@ function done()
 
 window.midExploit = function()
 {
-    preloadScripts(['755.js', 'jb755/c-code.js', 'mira755/c-code.js'], go);
+    if(document.location.hash)
+    {
+        var s = decodeURIComponent(document.location.hash.substr(3));
+        preloadScripts(['755.js', 'jb755/c-code.js', 'mira755/mira.js', s, 'mira755/c-code.js'], go);
+    }
+    else
+        preloadScripts(['755.js', 'jb755/c-code.js', 'mira755/mira.js', 'mira755/c-code.js'], go);
 }
 
 window.postExploit = function()
 {
+    document.cookie = 'kex=0';
     setTimeout(function() //update the screen one last time...
     {
         eval.call(window, scriptCode);
@@ -57,7 +69,7 @@ window.postExploit = function()
 </script>
 <script src="webkit-7.55/external/utils.js"></script>
 <script src="webkit-7.55/external/int64.js"></script>
-<script src="webkit-7.55/external/ps4nc.js"></script>
+<script src="webkit-7.55/external/ps4.js"></script>
 <button id="input1" onfocus="handle2()"></button>
 <button id="input2"></button>
 <button id="input3" onfocus="handle2()"></button>
