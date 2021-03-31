@@ -1,0 +1,376 @@
+
+<html manifest="offlinexmb.cache">
+<head>
+<meta charset="utf-8">
+<title>7.55 MOHCINE ELECTRO</title>
+<link rel="stylesheet prefetch" href="Style.css">
+<script>
+function DLProgress(e){
+	parent.ScrOverlay.style.display="block";
+	Percent=(Math.round(e.loaded / e.total * 100));
+	parent.cacheUPDtxt.innerHTML=" جاري أخذ نسخة للعمل بدون انترنت " + Percent + "%";
+	parent.CacheBar.style.width=Percent + '%';
+}
+function DisplayCacheProgress(){
+	setTimeout(function(){parent.cacheUPDtxt.innerHTML="تم اخذ النسخة بنجاح ... برجاء اغلاق المتصفح وإعادة تشغيلة مرة أخرى";},1000);}
+	window.applicationCache.addEventListener("progress",DLProgress,false);
+	window.applicationCache.oncached=function(e){DisplayCacheProgress();};
+	window.applicationCache.onupdateready=function(e){DisplayCacheProgress();};
+	window.applicationCache.onerror=function(e){parent.cacheUPDtxt.innerHTML="";
+};
+</script>
+
+
+<script>
+    function showdate() {
+  var dt = new Date();
+    Hour= dt.getHours();
+  Minute= dt.getMinutes();
+     Day=dt.getDate();
+   Month=dt.getMonth()+1;
+   Year=dt.getFullYear();
+if (Minute < 10) { Minute = "0" + Minute; };
+if (Hour < 10) { Hour = "0" + Hour; };
+document.getElementById("date").innerHTML = (Day+"/"+Month+"/"+Year);
+document.getElementById("clock").innerHTML = (Hour+":"+Minute);
+  }
+  
+  setInterval(showdate,0);
+</script>
+
+
+
+
+
+</head>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Cairo&display=swap');
+</style>
+<body class="bg-color">
+<div style="background-image: url('DRC.jpg'); background-size:cover ; height:100%;">
+<div id=ScrOverlay class=cacheUPDbg><pre id=cacheUPDtxt class=cacheUPD></pre>
+<div id=CacheProgress><div id=CacheBar></div></div></div>
+
+
+
+
+<meta charset="UTF-8" />
+<link rel="shortcut icon" href="img/favicon.ico" />
+<link rel="stylesheet" href="css/iconhome.css">
+<link rel="stylesheet" href="css/materializehome.css">
+<link rel="stylesheet" href="css/mainhome.css">
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />  
+<meta http-equiv="Content-Language" content="ar" />  
+
+
+</head>
+
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Cairo&display=swap');
+</style>
+
+
+
+
+
+
+
+
+<body>
+<a href="https://www.mohcineelectro.com">
+<img class="icon" src="img/M.png" style="position: absolute; right: 16; top: 280; width: 223px" width="223" height="200"/></a> 
+<script src="p/cal.js"></script>
+<div style="background: url('img/fundo.jpg')50%/100% no-repeat;">
+
+
+
+<div id="app" >
+<nav class="transparent" >
+<div class="nav-wrapper">
+<span id="date" ></span><span id="clock" ></span>
+<h1 href="javascript:void(0)"  class="brand-logo">MOHCINE ELECTRO V2</h1>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+<h1 class="msgs" id="msgs">
+
+
+
+
+
+<font face="Cocon® Next Arabic" style="font-size: 30pt">اختر نوع التفعيل / على 
+التحديث 7.55</font><font face="Cocon® Next Arabic" style="font-size: 40pt">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</font> </h1>
+</div>
+</nav>
+<br><br><br><br>
+<div class="menu">
+<button class="tile" onclick="load_HEN755(); return false"><img src="img/HenEnable.png"><p class="white-text-lancador">
+PS4 HEN</p>
+</button>&nbsp;
+
+<button class="tile" onclick="load_MIRA755(); return false"><img src="img/HenEnable.png"><p class="white-text-lancador">
+PS4 MIRA</p>
+</button>
+
+
+</div>
+ </div>
+
+<h1 style='text-align:center;text-shadow: 4px 4px 4px black;color:#FFFF00'>
+<font size="7" face="Cocon® Next Arabic">اللإضافات </font> </h1>
+ 
+
+<button class="tile" onclick="load_BIN_LOADER(); return false"><img src="img/binloader.png"><p class="white-text-lancador">
+BIN LOADER</p>
+</button>&nbsp;
+
+<button class="tile" onclick="load_ftp(); return false"><img src="img/ftp.png"><p class="white-text-lancador">
+FTP</p>
+</button>&nbsp;
+
+<button class="tile" onclick="load_Dumper_Game(); return false"><img src="img/dumper.png"><p class="white-text-lancador">
+Dumper Game</p>
+</button>&nbsp;
+
+<button class="tile" onclick="load_Kernel_Clock(); return false"><img src="img/kdumper.png"><p class="white-text-lancador">
+Kernel Clock</p>
+</button>&nbsp;
+
+<button class="tile" onclick="load_App2USB(); return false"><img src="img/app2usb.png"><p class="white-text-lancador">
+App2USB</p>
+</button>&nbsp;
+
+<button class="tile" onclick="load_ToDex(); return false"><img src="img/todex.png"><p class="white-text-lancador">
+ToDex</p>
+</button>&nbsp;
+
+<button class="tile" onclick="load_DB_Backup(); return false"><img src="img/backup.png"><p class="white-text-lancador">
+DB Backup</p>
+</button>&nbsp;
+
+<button class="tile" onclick="load_DB_Restore(); return false"><img src="img/restore.png"><p class="white-text-lancador">
+DB Restore</p>
+</button>&nbsp;
+
+  <br><br>
+  
+<button class="tile" onclick="load_Disable_Update(); return false"><img src="img/disableupdate.png"><p class="white-text-lancador">
+Disable Update</p>
+</button>&nbsp;
+
+<button class="tile" onclick="load_Enable_Update(); return false"><img src="img/enableupdate.png"><p class="white-text-lancador">
+Enable Update</p>
+</button>&nbsp;
+
+<button class="tile" onclick="load_Enable_Browser(); return false"><img src="img/history.png"><p class="white-text-lancador">
+Enable Browser</p>
+</button>&nbsp;
+  
+<button class="tile" onclick="load_Disable_ASLR(); return false"><img src="img/disableupdate.png"><p class="white-text-lancador">
+Disable ASLR</p>
+</button>&nbsp;
+
+<button class="tile" onclick="load_Fan_Control(); return false"><img src="img/FanControl.png"><p class="white-text-lancador">
+Fan Control</p>
+</button>&nbsp;
+
+<button class="tile" onclick="load_Dump_Kernel(); return false"><img src="img/kdumper.png"><p class="white-text-lancador">
+Dump Kernel</p>
+</button>&nbsp;
+
+<button class="tile" onclick="load_Dump_Modules(); return false"><img src="img/dumper.png"><p class="white-text-lancador">
+Dump Modules</p>
+</button>&nbsp;
+
+<button class="tile" onclick="load_Rename_Rif(); return false"><img src="img/avatarDumper.png"><p class="white-text-lancador">
+Rename Rif</p>
+</button>&nbsp;
+  
+  
+<br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+
+
+
+
+
+
+ <script src="js/materialize.js"></script>
+  <script src="js/vue.js"></script>
+<script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+function load_HEN755(){
+  var link = document.createElement('a');
+	  document.body.appendChild(link);
+      link.href = 'hengold/hengold.html';
+	  link.target='';
+	  link.click();
+}
+function load_MIRA755(){
+  var link = document.createElement('a');
+	  document.body.appendChild(link);
+      link.href = 'Mira/index.html';
+	  link.target='';
+	  link.click();
+}
+
+
+</script>
+<script>
+
+function load_BIN_LOADER(){
+  var link = document.createElement('a');
+	  document.body.appendChild(link);
+      link.href = 'binloader.html';
+	  link.target='';
+	  link.click();
+}
+function load_ftp(){
+  var link = document.createElement('a');
+	  document.body.appendChild(link);
+      link.href = 'payload755.html#f=payloads/ftp.js';
+	  link.target='';
+	  link.click();
+}
+function load_Dumper_Game(){
+  var link = document.createElement('a');
+	  document.body.appendChild(link);
+      link.href = 'payload755.html#f=payloads/dumper.js';
+	  link.target='';
+	  link.click();
+}
+function load_Kernel_Clock(){
+  var link = document.createElement('a');
+	  document.body.appendChild(link);
+      link.href = 'payload755.html#f=payloads/kernel-clock.js';
+	  link.target='';
+	  link.click();
+}
+function load_App2USB(){
+  var link = document.createElement('a');
+	  document.body.appendChild(link);
+      link.href = 'payload755.html#f=payloads/app2usb.js';
+	  link.target='';
+	  link.click();
+}
+function load_ToDex(){
+  var link = document.createElement('a');
+	  document.body.appendChild(link);
+      link.href = 'payload755.html#f=payloads/todex.js';
+	  link.target='';
+	  link.click();
+}
+function load_DB_Backup(){
+  var link = document.createElement('a');
+	  document.body.appendChild(link);
+      link.href = 'payload755.html#f=payloads/backup.js';
+	  link.target='';
+	  link.click();
+}
+function load_DB_Restore(){
+  var link = document.createElement('a');
+	  document.body.appendChild(link);
+      link.href = 'payload755.html#f=payloads/restore.js';
+	  link.target='';
+	  link.click();
+}
+
+
+
+</script>
+
+<script>
+
+
+
+
+
+function load_Disable_Update(){
+  var link = document.createElement('a');
+	  document.body.appendChild(link);
+      link.href = 'payload755.html#f=payloads/disable-updates.js';
+	  link.target='';
+	  link.click();
+}
+function load_Enable_Update(){
+  var link = document.createElement('a');
+	  document.body.appendChild(link);
+      link.href = 'payload755.html#f=payloads/enable-updates.js';
+	  link.target='';
+	  link.click();
+}
+function load_Enable_Browser(){
+  var link = document.createElement('a');
+	  document.body.appendChild(link);
+      link.href = 'payload755.html#f=payloads/enable-browser.js';
+	  link.target='';
+	  link.click();
+}
+function load_Disable_ASLR(){
+  var link = document.createElement('a');
+	  document.body.appendChild(link);
+      link.href = 'payload755.html#f=payloads/disable-aslr.js';
+	  link.target='';
+	  link.click();
+}
+function load_Fan_Control(){
+  var link = document.createElement('a');
+	  document.body.appendChild(link);
+      link.href = 'payload755.html#f=payloads/fan-threshold.js';
+	  link.target='';
+	  link.click();
+}
+function load_Dump_Kernel(){
+  var link = document.createElement('a');
+	  document.body.appendChild(link);
+      link.href = 'payload755.html#f=payloads/kernel-dumper.js';
+	  link.target='';
+	  link.click();
+}
+function load_Dump_Modules(){
+  var link = document.createElement('a');
+	  document.body.appendChild(link);
+      link.href = 'payload755.html#f=payloads/module-dumper.js';
+	  link.target='';
+	  link.click();
+}
+function load_Rename_Rif(){
+  var link = document.createElement('a');
+	  document.body.appendChild(link);
+      link.href = 'payload755.html#f=payloads/rif-renamer.js';
+	  link.target='';
+	  link.click();
+}
+
+
+
+
+
+</script>
+
+
+
+
+
+</div>
+</body>
+</html>
