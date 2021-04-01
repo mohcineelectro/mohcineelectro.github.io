@@ -1,28 +1,26 @@
-<html>
-    <style>
-body{color: white; background-image:url(1.jpg); background-attachment:fixed; background-size:100%; background-repeat:no-repeat;}
-input{width:25px;height:25px;background-color: transparent;}
-button {
-            background-color: white;
-            border: 2px solid black;
-            border-radius: 10px;
-            text-align: center;
-}
-button:hover {
-            box-shadow: 0 5px 50px 0 white;
-            color: white;
-            border-radius: 10px;
-}</style>
-<body onload="go()">
-<script>
+<html><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"><style>
+    body{color: white; background-image:url(1.jpg); background-attachment:fixed; background-size:100%; background-repeat:no-repeat;}
 
-if(document.cookie.indexOf('kex=0') >= 0)
-    document.location.href = 'index.html';
-</script>
+    input{width:25px;height:25px;background-color: transparent;}
+        button {
+                    background-color: white;
+                    border: 2px solid black;
+                    border-radius: 10px;
+                    text-align: center;
+        }
+        button:hover {
+                    box-shadow: 0 5px 50px 0 white;
+                    color: white;
+                    border-radius: 10px;
+        }</style>
+</head><body onload="go()">
 <script>
 function print(){}
 
 var scriptCode = '';
+var fwFromUA = navigator.userAgent.substring(navigator.userAgent.indexOf('5.0 (') + 19, navigator.userAgent.indexOf(') Apple'));
+fwFromUA = fwFromUA.replace('.', '');
 
 function preloadScripts(lst)
 {
@@ -48,13 +46,46 @@ function done()
 
 window.midExploit = function()
 {
-    if(document.location.hash)
+    if (fwFromUA != "750" && fwFromUA != "751" && fwFromUA != "755") {
+    die('Unsupported Firmware!');}
+
+    if (fwFromUA == "750") 
+    {
+        if(document.location.hash)
     {
         var s = decodeURIComponent(document.location.hash.substr(3));
-        preloadScripts(['755.js', 'jb755/c-code.js', 'mira755/mira.js', s, 'mira755/c-code.js'], go);
+        preloadScripts(['Mira/blob.js', 'Mira/jb.js', 'Mira/mira750.js', s, 'Mira/netcat.js'], go);
     }
     else
-        preloadScripts(['755.js', 'jb755/c-code.js', 'mira755/mira.js', 'mira755/c-code.js'], go);
+        preloadScripts(['Mira/blob.js', 'Mira/jb.js', 'Mira/mira750.js', 'Mira/netcat.js'], go);
+    
+    }
+
+    if (fwFromUA == "751") 
+    {
+        if(document.location.hash)
+    {
+        var s = decodeURIComponent(document.location.hash.substr(3));
+        preloadScripts(['Mira/blob.js', 'Mira/jb.js', 'Mira/mira751.js', s, 'Mira/netcat.js'], go);
+    }
+    else
+        preloadScripts(['Mira/blob.js', 'Mira/jb.js', 'Mira/mira751.js', 'Mira/netcat.js'], go);
+    
+    }
+
+    if (fwFromUA == "755") 
+    {
+        if(document.location.hash)
+    {
+        var s = decodeURIComponent(document.location.hash.substr(3));
+        preloadScripts(['Mira/blob.js', 'Mira/jb.js', 'Mira/mira755.js', s, 'Mira/netcat.js'], go);
+    }
+    else
+        preloadScripts(['Mira/blob.js', 'Mira/jb.js', 'Mira/mira755.js', 'Mira/netcat.js'], go);
+    
+    }
+
+   
 }
 
 window.postExploit = function()
@@ -67,9 +98,9 @@ window.postExploit = function()
     }, 100);
 };
 </script>
-<script src="webkit-7.55/external/utils.js"></script>
-<script src="webkit-7.55/external/int64.js"></script>
-<script src="webkit-7.55/external/ps4.js"></script>
+<script src="webkit-7.50/external/utils.js"></script>
+<script src="webkit-7.50/external/int64.js"></script>
+<script src="webkit-7.50/external/ps4.js"></script>
 <button id="input1" onfocus="handle2()"></button>
 <button id="input2"></button>
 <button id="input3" onfocus="handle2()"></button>
