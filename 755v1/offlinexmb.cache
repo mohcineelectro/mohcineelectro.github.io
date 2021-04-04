@@ -39,8 +39,7 @@ ps4debug.js
 rifrenamer.js
 todex.js
 webrte.js
-Style.css
-offlinexmb.cache
+
 
 css\icon.css
 css\iconhome.css
@@ -102,10 +101,11 @@ img\restore.png
 img\rif.png
 img\rte.png
 img\SaveGame.png
-
 img\todex.png
+
 js\materialize.js
 js\vue.js
+
 Mira\1.jpg
 Mira\blob.js
 Mira\index.html
