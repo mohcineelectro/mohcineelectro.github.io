@@ -18,7 +18,7 @@ fan.js
 ftp.js
 idu.js
 index.html
-
+indexasli.html
 jb.js
 kernelclock.js
 lamance132.js
@@ -36,8 +36,8 @@ payload.html
 ps4debug.js
 Restore.js
 rifrenamer.js
-
-
+Style.css
+Thumbs.db
 todex.js
 webrte.js
 css\icon.css
@@ -116,7 +116,7 @@ Mira\mira-751.js
 Mira\mira-755.js
 Mira\netcat.js
 Mira\ps4.js
-
+Mira\Style.css
 Mira\Thumbs.db
 Mira\utils.js
 webkit-7.55\external\int64.js
