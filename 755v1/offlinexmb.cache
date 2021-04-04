@@ -39,12 +39,16 @@ ps4debug.js
 rifrenamer.js
 todex.js
 webrte.js
+Style.css
+offlinexmb.cache
+
 css\icon.css
 css\iconhome.css
 css\main.css
 css\mainhome.css
 css\materialize.css
 css\materializehome.css
+
 hengold\1.jpg
 hengold\blob.js
 hengold\goldhen-750.js
@@ -60,8 +64,8 @@ hengold\loader-755.js
 hengold\loader.js
 hengold\netcat.js
 hengold\ps4.js
-
 hengold\utils.js
+
 img\app2usb.png
 img\avatarDumper.png
 img\backup.png
