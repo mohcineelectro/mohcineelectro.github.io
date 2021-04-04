@@ -3,22 +3,23 @@ CACHE MANIFEST
 
 1.jpg
 755.jpg
+Backup.js
+DRC.jpg
+MakeCache.bat
+Restore.js
 app2usb.js
 appdumper.js
 arabicguy100.js
 arabicguy127.js
 arabicguy132.js
-Backup.js
 binloader.js
 blob.js
 disableupdates.js
-DRC.jpg
 enableupdates.js
 fan.js
 ftp.js
 idu.js
 index.html
-indexasli.html
 jb.js
 kernelclock.js
 lamance132.js
@@ -33,11 +34,9 @@ nativecaller132.js
 netcat.js
 p.html
 payload.html
+payload755.html
 ps4debug.js
-Restore.js
 rifrenamer.js
-
-
 todex.js
 webrte.js
 css\icon.css
@@ -61,7 +60,7 @@ hengold\loader-755.js
 hengold\loader.js
 hengold\netcat.js
 hengold\ps4.js
-hengold\Thumbs.db
+
 hengold\utils.js
 img\app2usb.png
 img\avatarDumper.png
@@ -99,7 +98,7 @@ img\restore.png
 img\rif.png
 img\rte.png
 img\SaveGame.png
-img\Thumbs.db
+
 img\todex.png
 js\materialize.js
 js\vue.js
